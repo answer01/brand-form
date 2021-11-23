@@ -2,6 +2,7 @@ $(function () {
 
 })
 
+
 // select-head
 
 let select = function () {
@@ -30,7 +31,17 @@ let select = function () {
 };
 select();
 
+/*
+Для родителя слойлеров пишем атрибут data-spollers
+Для заголовков слойлеров пишем атрибут data-spoller
+Если нужно включать\выключать работу спойлеров на разных размерах экранов
+пишем параметры ширины и типа брейкпоинта.
+Например: 
+data-spollers="992,max" - спойлеры будут работать только на экранах меньше или равно 992px
+data-spollers="768,min" - спойлеры будут работать только на экранах больше или равно 768px
 
+Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
+*/
 // SPOLLERS
 const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
@@ -215,7 +226,6 @@ let _slideToggle = (target, duration = 500) => {
    }
 };
 
-
 //QUANTITY
 let quantityButtons = document.querySelectorAll('.quantity__button');
 if (quantityButtons.length > 0) {
@@ -236,95 +246,7 @@ if (quantityButtons.length > 0) {
     }
 }
 
-/*
-Для родителя слойлеров пишем атрибут data-spollers
-Для заголовков слойлеров пишем атрибут data-spoller
-Если нужно включать\выключать работу спойлеров на разных размерах экранов
-пишем параметры ширины и типа брейкпоинта.
-Например: 
-data-spollers="992,max" - спойлеры будут работать только на экранах меньше или равно 992px
-data-spollers="768,min" - спойлеры будут работать только на экранах больше или равно 768px
 
-Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
-*/
-
-
-//form-steps
-
-// const getBlocks = () => document.querySelectorAll('.step')
-// let counter = 1
-// const checkBlock = (block) => {
-//   if (block.classList.contains('step-active')) {
-//     block.style = 'visibility: visible'
-//   } else {
-//     block.style = 'visibility: hidden'
-//   }
-// }
-
-// const getTnputs = (block) => {
-//   return Object.values(block.querySelectorAll('input'))
-// }
-
-// const goNext = () => {
-//   console.log(counter)
-//   const blocks = getBlocks()
-//   console.log(blocks)
-//   blocks[counter].style = 'visibility: visible'
-
-// }
-
-// const goBack = () => {
-//   const blocks = getBlocks()
-//   blocks[counter].style = 'visibility: hidden'
-// }
-
-// const checkInputsValue = (block) => {
-//   let res = false
-//   const inputs = getTnputs(block)
-//   inputs.forEach(input => {
-//     input.addEventListener('change', function handler() {
-//       const inputsValue = inputs.map((input) => {
-//         if (input.type == 'text') {
-//           return input.value
-//         }
-//         if (input.type == 'checkbox') {
-//           return input.checked
-//         }
-//         if (input.type == 'radio') {
-//           const parent = input.parentNode
-//           const parentInputsValue = parent.querySelectorAll('input')
-//           console.log(parentInputsValue)
-//           const radiosValue = inputs.map(input => input.checked)
-//           if (radiosValue.every(el => el == false)) {
-//             return false
-//           } else {
-//             return true
-//           }
-//           return
-//         }
-//         if (res) {
-//           goNext()
-//           block.removeEventListener('change', handler)
-//         }
-//       })
-//       res = inputsValue.every(val => val)
-//       console.log(inputsValue, res)
-//       if (res) {
-//         goNext()
-//         counter++
-//         this.removeEventListener('change', handler)
-//       }
-//       return res
-//     })
-//   })
-// }
-
-// const main = () => {
-  
-// }
-
-// getBlocks().forEach((el) => checkBlock(el))
-// getBlocks().forEach((el) => checkInputsValue(el))
 
 
 // step-choise
@@ -343,3 +265,60 @@ stepChoises.forEach((choise) => {
         });
     });
 });
+
+//form-steps
+// let blocks = Object.values(document.querySelectorAll('.step'))
+// let counter = 1
+// const checkBlock = (block) => {
+//   if (block.classList.contains('step-active')) {
+//     block.style = 'display: block'
+//   } else {
+//     block.style = 'display: none'
+//   }
+// }
+
+// const listener = (event) => {
+//   const parent = event.target.closest('.step');
+//   const inputs = Object.values(parent.querySelectorAll('input'));
+//   const inputsValue = inputs.map((el) => {
+//     if (el.type == 'text') {
+//       return el.value
+//     }
+//     if (el.type == 'checkbox') {
+//       return el.checked
+//     }
+//     if (el.type == 'radio') {
+//       return true
+//     }
+//   })
+//   if (inputsValue.every((el) => el)) {
+//     parent.style = 'display: block'
+//     if (counter < 2) {
+//       blocks[counter].style = 'display: block'
+//       counter++
+//     } else {
+//       blocks[2].style = 'display: block';
+//       blocks[3].style = 'display: block';
+//       blocks[4].style = 'display: block';
+//     }
+//   }
+// }
+// blocks.forEach((el) => checkBlock(el))
+// blocks[0].addEventListener('change', listener)
+// blocks[1].addEventListener('change', listener)
+
+
+// let clearBtn = document.querySelector(".steps-clear");
+// let inputsText = document.querySelectorAll('input');
+// clearBtn.addEventListener("click", function() {
+//    inputsText.forEach((item) => {
+//       if (item.type == 'text') {
+//          item.value = ''
+//    };
+//   })
+// });
+
+
+
+
+

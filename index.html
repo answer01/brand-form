@@ -31,8 +31,8 @@
             </ul>
 
             <ul class="header__menu--bottom">
-               <li class="icon-menu-link">
-                  <a href="#">
+               <li>
+                  <a class="icon-menu-link" href="#">
                      <svg class="icon">
                         <use xlink:href="#Catalog-02"></use>
                      </svg>КАТАЛОГ
@@ -104,6 +104,12 @@
 
             <div class="header__icons">
 
+               <a class="header__icon icon-menu-link mobail" href="#">
+                  <svg class="icon" width="20" height="20">
+                     <use xlink:href="#Catalog-02"></use>
+                  </svg>КАТАЛОГ
+               </a>
+
                <a href="#" class="header__icon">
                   <svg class="icon" width="18" height="18">
                      <use xlink:href="#Search-03"></use>
@@ -111,19 +117,20 @@
                </a>
 
 
-               <a href="#" class="header__icon">
+               <a href="#" class="header__icon modile">
                   <svg class="icon" width="18" height="18">
                      <use xlink:href="#User-profile-04"></use>
                   </svg>
                </a>
 
-               <div class="header__mob-logo">
-                  <svg class="icon">
-                     <use xlink:href="#Temp-logo-42"></use>
-                  </svg>
-               </div>
+               <a class="header__icon header__mob-logo" href="#">
+                  <picture>
+                     <source srcset="images/logo-sm.svg" style="width: 128px; height:24px">
+                     <img src="images/logo.svg" style="width: 100%; height:58px" alt="Пример 1">
+                  </picture>
+               </a>
 
-               <a href="#" class="header__icon">
+               <a href="#" class="header__icon modile">
                   <svg class="icon" width="20" height="18">
                      <use xlink:href="#Like-05"></use>
                   </svg>
@@ -134,6 +141,12 @@
                      <use xlink:href="#Bag-06"></use>
                   </svg>
                </a>
+
+               <div class="menu-icon">
+                  <span>1</span>
+                  <span>1</span>
+                  <span>1</span>
+               </div>
 
             </div>
 
@@ -149,20 +162,20 @@
       <main class="main">
          <div class="form-section container">
 
-            <form action="post" class="order-form">
+            <form class="order-form">
 
                <h1 class="order-form__title">Оформлення замовлення</h1>
 
 
                <div class="step step-active">
-                  <div class="step-count">Крок 1</div>
+                  <div class="step-count active">Крок 1</div>
 
                   <div class="step-top">
-                     <div class="step__title">Контактні дані</div>
-                     <svg class="step-check active icon" width="40" height="40">
-                        <use xlink:href="#check"></use>
+                     <div class="step__title active">Контактні дані</div>
+                     <svg class="step-check active icon" width="30" height="30">
+                        <use xlink:href="#Done_max-64"></use>
                      </svg>
-                     <button class="steps-clear btn-gray">Стерти всю інформацію
+                     <button type="reset" class="steps-clear btn-gray">Стерти всю інформацію
                         <svg class="icon">
                            <use xlink:href="#Delete-35"></use>
                         </svg>
@@ -206,52 +219,94 @@
 
                   <div class="step-top">
                      <div class="step__title active">Доставка</div>
-                     <svg class="step-check active icon" width="40" height="40">
-                        <use xlink:href="#check"></use>
+                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                        viewBox="0 0 30 30">
+                        <defs>
+                           <style>
+                              .cls-1 {
+                                 fill: url(#linear-gradient);
+                              }
+
+                              .cls-2 {
+                                 fill: url(#linear-gradient-2);
+                              }
+
+                              .cls-3 {
+                                 fill: url(#linear-gradient-3);
+                              }
+
+                              .cls-4 {
+                                 fill: #fff;
+                              }
+                           </style>
+                           <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#e8e8e8" />
+                              <stop offset="1" stop-color="#fff" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#fafafa" />
+                              <stop offset="1" stop-color="#e0e0e0" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#004d47" />
+                              <stop offset="1" stop-color="#df9" />
+                           </linearGradient>
+                        </defs>
+                        <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                        <circle class="cls-2" cx="15" cy="15" r="11" />
+                        <circle class="cls-3" cx="15" cy="15" r="10" />
+                        <path class="cls-4"
+                           d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                      </svg>
                   </div>
 
-                  <div class="step-content">
-                     <div class="step-content__links">
-                        Місто:
-                        <div class="location">
-                           <svg class="icon" width="8" height="12">
-                              <use xlink:href="#Geotag-08"></use>
-                           </svg>
-                           <span>Київ</span>
-                        </div>
-                        <a class="step-content__location-link" href="#">обрати інше місто</a>
-                     </div>
-                  </div>
-
-
-                  <div class="step-choise">
-                     <div class="step-choise__item active">
-                        <label class="checkbox mr">
-                           <input class="checkbox-input" type="radio" value="1" name="form-delivery" checked>
-                           <span class="checkbox-text">Кур’єрська доставка<span>Безкоштовно</span> </span>
-                        </label>
-                        <div class="step-content__inputs step-inputs-row">
-                           <input class="step-input__street" autocomplete="off" type="text" name="form[]"
-                              placeholder="Княжий Затон вулиця">
-                           <input class="step-input__house" autocomplete="off" type="text" name="form[]"
-                              placeholder="21">
-                           <input class="step-input__apartment" autocomplete="off" type="text" name="form[]"
-                              placeholder="173">
+                  <div class="step-hidden">
+                     <div class="step-content">
+                        <div class="step-content__links">
+                           Місто:
+                           <div class="location">
+                              <svg class="icon" width="8" height="12">
+                                 <use xlink:href="#Geotag-08"></use>
+                              </svg>
+                              <span>Київ</span>
+                           </div>
+                           <a class="step-content__location-link" href="#">обрати інше місто</a>
                         </div>
                      </div>
-                     <div class="step-choise__item">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="form-delivery">
-                           <span class="checkbox-text">Самовивіз<span>Безкоштовно</span></span>
-                        </label>
+
+
+                     <div class="step-choise">
+                        <div class="step-choise__item active">
+                           <label class="checkbox mr">
+                              <input class="checkbox-input" type="radio" value="1" name="form-delivery" checked>
+                              <span class="checkbox-text">Кур’єрська доставка<span>Безкоштовно</span> </span>
+                           </label>
+                           <div class="step-content__inputs step-inputs-row">
+                              <input class="step-input__street" autocomplete="off" type="text" name="form[]"
+                                 placeholder="Княжий Затон вулиця">
+                              <input class="step-input__house" autocomplete="off" type="text" name="form[]"
+                                 placeholder="21">
+                              <input class="step-input__apartment" autocomplete="off" type="text" name="form[]"
+                                 placeholder="173">
+                           </div>
+                        </div>
+                        <div class="step-choise__item">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="form-delivery">
+                              <span class="checkbox-text">Самовивіз<span>Безкоштовно</span></span>
+                           </label>
+                        </div>
+                        <p class="step-choise__text">
+                           Адреса пункту самовивозу: <span>вулиця Новий шлях, 22</span> (район станції метро
+                           “Академмістечко”).
+                           Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у суботу
+                           та
+                           неділю.
+                        </p>
                      </div>
-                     <p class="step-choise__text">
-                        Адреса пункту самовивозу: <span>вулиця Новий шлях, 22</span> (район станції метро
-                        “Академмістечко”).
-                        Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у суботу та
-                        неділю.
-                     </p>
                   </div>
                </div>
 
@@ -260,36 +315,79 @@
 
                   <div class="step-top">
                      <div class="step__title active">Оплата</div>
-                     <svg class="step-check active icon" width="40" height="40">
-                        <use xlink:href="#check"></use>
+                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                        viewBox="0 0 30 30">
+                        <defs>
+                           <style>
+                              .cls-1 {
+                                 fill: url(#linear-gradient);
+                              }
+
+                              .cls-2 {
+                                 fill: url(#linear-gradient-2);
+                              }
+
+                              .cls-3 {
+                                 fill: url(#linear-gradient-3);
+                              }
+
+                              .cls-4 {
+                                 fill: #fff;
+                              }
+                           </style>
+                           <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#e8e8e8" />
+                              <stop offset="1" stop-color="#fff" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#fafafa" />
+                              <stop offset="1" stop-color="#e0e0e0" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#004d47" />
+                              <stop offset="1" stop-color="#df9" />
+                           </linearGradient>
+                        </defs>
+                        <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                        <circle class="cls-2" cx="15" cy="15" r="11" />
+                        <circle class="cls-3" cx="15" cy="15" r="10" />
+                        <path class="cls-4"
+                           d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                      </svg>
                   </div>
 
-                  <div class="step-choise">
-                     <div class="step-choise__item active">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="payment" checked>
-                           <span class="checkbox-text">Кур’єру при отриманні (лише готівка) </span>
-                        </label>
+                  <div class="step-hidden">
+
+                     <div class="step-choise">
+                        <div class="step-choise__item active">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="payment" checked>
+                              <span class="checkbox-text">Кур’єру при отриманні (лише готівка) </span>
+                           </label>
+                        </div>
+                        <div class="step-choise__item">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="payment">
+                              <span class="checkbox-text">Карткою онлайн (Liqpay)</span>
+                           </label>
+                        </div>
+                        <div class="step-choise__item">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="payment">
+                              <span class="checkbox-text">Післяплата</span>
+                           </label>
+                        </div>
+                        <div class="step-choise__item">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="payment">
+                              <span class="checkbox-text">Кредит/оплата частинами</span>
+                           </label>
+                        </div>
                      </div>
-                     <div class="step-choise__item">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="payment">
-                           <span class="checkbox-text">Карткою онлайн (Liqpay)</span>
-                        </label>
-                     </div>
-                     <div class="step-choise__item">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="payment">
-                           <span class="checkbox-text">Післяплата</span>
-                        </label>
-                     </div>
-                     <div class="step-choise__item">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="payment">
-                           <span class="checkbox-text">Кредит/оплата частинами</span>
-                        </label>
-                     </div>
+
                   </div>
                </div>
 
@@ -299,44 +397,87 @@
 
                   <div class="step-top">
                      <div class="step__title active">Збирання</div>
-                     <svg class="step-check active icon" width="40" height="40">
-                        <use xlink:href="#check"></use>
+                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                        viewBox="0 0 30 30">
+                        <defs>
+                           <style>
+                              .cls-1 {
+                                 fill: url(#linear-gradient);
+                              }
+
+                              .cls-2 {
+                                 fill: url(#linear-gradient-2);
+                              }
+
+                              .cls-3 {
+                                 fill: url(#linear-gradient-3);
+                              }
+
+                              .cls-4 {
+                                 fill: #fff;
+                              }
+                           </style>
+                           <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#e8e8e8" />
+                              <stop offset="1" stop-color="#fff" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#fafafa" />
+                              <stop offset="1" stop-color="#e0e0e0" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#004d47" />
+                              <stop offset="1" stop-color="#df9" />
+                           </linearGradient>
+                        </defs>
+                        <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                        <circle class="cls-2" cx="15" cy="15" r="11" />
+                        <circle class="cls-3" cx="15" cy="15" r="10" />
+                        <path class="cls-4"
+                           d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                      </svg>
                   </div>
 
-                  <div class="step-choise__text">
-                     У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний для Вас
-                     спосіб збирання.
+                  <div class="step-hidden">
+                     <div class="step-choise__text">
+                        У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний для
+                        Вас
+                        спосіб збирання.
+                     </div>
+
+                     <div class="step-spoiler" data-spollers>
+                        <p class="spoiler-title" data-spoller>
+                           Товари, що потребують збирання
+                           <svg class="icon" width="8" height="5">
+                              <use xlink:href="#Dropdown-10"></use>
+                           </svg>
+                        </p>
+                        <p class="spoiler-body step-choise__text">
+                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam vero hic
+                           similique quo. Debitis atque consectetur cum harum corrupti? Eaque, consequuntur porro!
+                           Temporibus error ea ipsam consectetur. Porro, odio.
+                        </p>
+                     </div>
+
+                     <div class="step-choise">
+                        <div class="step-choise__item active">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="cureir" checked>
+                              <span class="checkbox-text">Збирання нашими кур’єрами<span>250 грн</span></span>
+                           </label>
+                        </div>
+                        <div class="step-choise__item">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="cureir">
+                              <span class="checkbox-text selfcurier">Самостійно<span>Безкоштовно</span></span>
+                           </label>
+                        </div>
+                     </div>
                   </div>
 
-                  <div class="step-spoiler" data-spollers>
-                     <p class="spoiler-title" data-spoller>
-                        Товари, що потребують збирання
-                        <svg class="icon" width="8" height="5">
-                           <use xlink:href="#Dropdown-10"></use>
-                        </svg>
-                     </p>
-                     <p class="spoiler-body step-choise__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam vero hic
-                        similique quo. Debitis atque consectetur cum harum corrupti? Eaque, consequuntur porro!
-                        Temporibus error ea ipsam consectetur. Porro, odio.
-                     </p>
-                  </div>
-
-                  <div class="step-choise">
-                     <div class="step-choise__item active">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="cureir" checked>
-                           <span class="checkbox-text">Збирання нашими кур’єрами<span>250 грн</span></span>
-                        </label>
-                     </div>
-                     <div class="step-choise__item">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="cureir">
-                           <span class="checkbox-text">Самостійно<span>Безкоштовно</span></span>
-                        </label>
-                     </div>
-                  </div>
                </div>
 
 
@@ -345,108 +486,189 @@
 
                   <div class="step-top step-top-garanty">
                      <div class="step__title active">Додаткова гарантія</div>
-                     <svg class="step-check active icon" width="40" height="40">
-                        <use xlink:href="#check"></use>
+                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                        viewBox="0 0 30 30">
+                        <defs>
+                           <style>
+                              .cls-1 {
+                                 fill: url(#linear-gradient);
+                              }
+
+                              .cls-2 {
+                                 fill: url(#linear-gradient-2);
+                              }
+
+                              .cls-3 {
+                                 fill: url(#linear-gradient-3);
+                              }
+
+                              .cls-4 {
+                                 fill: #fff;
+                              }
+                           </style>
+                           <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#e8e8e8" />
+                              <stop offset="1" stop-color="#fff" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#fafafa" />
+                              <stop offset="1" stop-color="#e0e0e0" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#004d47" />
+                              <stop offset="1" stop-color="#df9" />
+                           </linearGradient>
+                        </defs>
+                        <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                        <circle class="cls-2" cx="15" cy="15" r="11" />
+                        <circle class="cls-3" cx="15" cy="15" r="10" />
+                        <path class="cls-4"
+                           d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                      </svg>
                   </div>
 
-                  <div class="step-choise__item step-choise__item--garanty active">
-                     <label class="checkbox">
-                        <input class="checkbox-input" type="radio" value="1" name="garanty" checked>
-                        <span class="checkbox-text">Так<span>800 грн</span></span>
-                     </label>
+                  <div class="step-hidden">
+                     <div class="step-choise__item step-choise__item--garanty active">
+                        <label class="checkbox">
+                           <input class="checkbox-input" type="radio" value="1" name="garanty" checked>
+                           <span class="checkbox-text">Так<span>800 грн</span></span>
+                        </label>
 
 
 
-                     <div class="step-choise__text">
-                        Ми пропонуємо збільшити термін гарантії на товари, які ви придбали. Детальніше про умови можна
-                        дізнатись за цим <a href="#">посиланням.</a>
-                     </div>
-
-                     <div class="step-choise__text">
-                        Додаткова гарантія доступна на 2 товари з вашого замовлення:
-                     </div>
-
-                     <div class="step-choise-block df">
-
-                        <div class="step-choise">
-
-                           <ul class="step-choise__products">
-
-
-                              <li class="step-choise__product">
-                                 <label class="checkbox checkbox-product">
-                                    <input class="checkbox-input" type="checkbox" value="1" name="form[]">
-                                    <span class="checkbox-text fs0">
-                                       1
-                                    </span>
-                                 </label>
-                                 <div class="step-choise__product-desc">
-                                    <p class="step-choise__product--category">Дитячий стіл</p>
-                                    <p class="step-choise__product--title">Brand Oxford Wood Max</p>
-                                    <p class="step-choise__product--garanty">+800 грн за 1 рік гарантії</p>
-                                 </div>
-                              </li>
-                              <li class="step-choise__product">
-                                 <label class="checkbox checkbox-product">
-                                    <input class="checkbox-input" type="checkbox" value="1" name="form[]">
-                                    <span class="checkbox-text fs0">
-                                       1
-                                    </span>
-                                 </label>
-                                 <div class="step-choise__product-desc">
-                                    <p class="step-choise__product--category">Дитяче крісло</p>
-                                    <p class="step-choise__product--title">Brand Match Graybase</p>
-                                    <p class="step-choise__product--garanty">+500 грн за 1 рік гарантії</p>
-                                 </div>
-                              </li>
-
-                           </ul>
-
+                        <div class="step-choise__text">
+                           Ми пропонуємо збільшити термін гарантії на товари, які ви придбали. Детальніше про умови
+                           можна
+                           дізнатись за цим <a href="#">посиланням.</a>
                         </div>
 
-                        <div class="step-quantity">
-                           <p class="step-quantity-text">Додати</p>
+                        <div class="step-choise__text">
+                           Додаткова гарантія доступна на 2 товари з вашого замовлення:
+                        </div>
 
-                           <div class="quantity">
-                              <div class="quantity__input">
-                                 <input autocomplete="off" type="text" name="form[]" value="1">
-                              </div>
+                        <div class="step-choise-block df">
 
-                              <div class="quantity__btns">
-                                 <div class="quantity__button quantity__button_plus">
-                                    <svg width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                          d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
-                                          fill="#808080"></path>
-                                    </svg>
-                                 </div>
-                                 <div class="quantity__button quantity__button_minus">
-                                    <svg width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                          d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
-                                          fill="#808080"></path>
-                                    </svg>
-                                 </div>
-                              </div>
+                           <div class="step-choise">
+
+                              <ul class="step-choise__products">
+
+
+                                 <li class="step-choise__product">
+                                    <div class="step-choise__product--content">
+                                       <label class="checkbox checkbox-product">
+                                          <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                                          <span class="checkbox-text fs0">
+                                             1
+                                          </span>
+                                       </label>
+                                       <div class="step-choise__product-desc">
+                                          <p class="step-choise__product--category">Дитячий стіл</p>
+                                          <p class="step-choise__product--title">Brand Oxford Wood Max</p>
+                                          <p class="step-choise__product--garanty">+800 грн за 1 рік гарантії</p>
+                                       </div>
+                                    </div>
+                                    <div class="step-quantity">
+                                       <p class="step-quantity-text">Додати</p>
+
+                                       <div class="quantity">
+                                          <div class="quantity__input">
+                                             <input autocomplete="off" type="text" name="form[]" value="1">
+                                          </div>
+
+                                          <div class="quantity__btns">
+                                             <div class="quantity__button quantity__button_plus">
+                                                <svg width="8" height="5" viewBox="0 0 8 5"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
+                                                      fill="#808080"></path>
+                                                </svg>
+                                             </div>
+                                             <div class="quantity__button quantity__button_minus">
+                                                <svg width="8" height="5" viewBox="0 0 8 5"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
+                                                      fill="#808080"></path>
+                                                </svg>
+                                             </div>
+                                          </div>
+
+                                       </div>
+                                       <p class="step-quantity-text">років
+                                          гарантії</p>
+                                    </div>
+                                 </li>
+                                 <li class="step-choise__product">
+                                    <div class="step-choise__product--content">
+                                       <label class="checkbox checkbox-product">
+                                          <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                                          <span class="checkbox-text fs0">
+                                             1
+                                          </span>
+                                       </label>
+                                       <div class="step-choise__product-desc">
+                                          <p class="step-choise__product--category">Дитяче крісло</p>
+                                          <p class="step-choise__product--title">Brand Match Graybase</p>
+                                          <p class="step-choise__product--garanty">+500 грн за 1 рік гарантії</p>
+                                       </div>
+                                    </div>
+                                    <div class="step-quantity">
+                                       <p class="step-quantity-text">Додати</p>
+
+                                       <div class="quantity">
+                                          <div class="quantity__input">
+                                             <input autocomplete="off" type="text" name="form[]" value="1">
+                                          </div>
+
+                                          <div class="quantity__btns">
+                                             <div class="quantity__button quantity__button_plus">
+                                                <svg width="8" height="5" viewBox="0 0 8 5"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
+                                                      fill="#808080"></path>
+                                                </svg>
+                                             </div>
+                                             <div class="quantity__button quantity__button_minus">
+                                                <svg width="8" height="5" viewBox="0 0 8 5"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
+                                                      fill="#808080"></path>
+                                                </svg>
+                                             </div>
+                                          </div>
+
+                                       </div>
+                                       <p class="step-quantity-text">років
+                                          гарантії</p>
+
+                                    </div>
+                                 </li>
+
+                              </ul>
 
                            </div>
-                           <p class="step-quantity-text">років
-                              гарантії</p>
+
 
                         </div>
-
                      </div>
+
+                     <label class="checkbox">
+                        <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                        <span class="checkbox-text">Hi<span>Безкоштовно</span></span>
+                     </label>
+
 
                   </div>
 
 
 
 
-                  <label class="checkbox">
-                     <input class="checkbox-input" type="checkbox" value="1" name="form[]">
-                     <span class="checkbox-text">Hi<span>Безкоштовно</span></span>
-                  </label>
 
                </div>
 
@@ -498,15 +720,28 @@
                      </div>
                   </div>
 
+
                   <div class="order-bill__item">
                      <div class="order-bill__category">Аксесуар</div>
                      <div class="order-bill__product">
-                        <p>Подушка-розмальовка</p>
-                        <p class="price">900 грн</p>
+                        <p>Маркери магнітні</p>
+                        <p class="price">260 грн</p>
                      </div>
                      <div class="order-bill__action">
                         <p>Знижка</p>
-                        <p class="price">900 грн</p>
+                        <p class="price">-260 грн</p>
+                     </div>
+                  </div>
+
+                  <div class="order-bill__item">
+                     <div class="order-bill__category">Аксесуар</div>
+                     <div class="order-bill__product">
+                        <p>Щось ще</p>
+                        <p class="price">260 грн</p>
+                     </div>
+                     <div class="order-bill__action">
+                        <p>Знижка</p>
+                        <p class="price">-260 грн</p>
                      </div>
                   </div>
 
@@ -527,7 +762,7 @@
                   <p class="action-all-price">17 850 грн</p>
                </div>
 
-               <button class="btn">Підтвердити замовлення</button>
+               <button class="btn order-bill-btn">Підтвердити замовлення</button>
 
                <div class="order-conf">Підтверджуючи замовлення, я приймаю
                   умови <a href="#">угоди користувача</a>
@@ -546,31 +781,31 @@
 
             <div class="footer__top">
 
-               <div class="footer__logo">
-                  <svg class="icon">
-                     <use xlink:href="#Temp-logo-42"></use>
-                  </svg>
-                  <p>ДИТЯЧІ МЕБЛІ, ЩО ЗРОСТАЮТЬ</p>
-               </div>
+               <a class="footer__logo" href="#">
+                  <picture>
+                     <source srcset="images/logo-sm.svg" media="(max-width: 800px)" style="width: 128px; height:24px" />
+                     <source srcset="images/logo.svg" media="(min-width: 801px)" style="width: 100%; height:58px" />
+                     <img src="images/logo.svg" style="width: 100%; height:58px" alt="Пример 1" />
+                  </picture>
+               </a>
 
                <div class="footer__btns">
                   <a href="#" class="footer__btn">
-                     <svg class="icon">
+                     <svg class="icon" width="12" height="12">
                         <use xlink:href="#Phone-09"></use>
                      </svg>
                      ЗАМОВИТИ ДЗВІНОК
                   </a>
                   <a href="#" class="footer__btn">
-                     <svg class="icon">
+                     <svg class="icon" width="18" height="12">
                         <use xlink:href="#Mail-37"></use>
                      </svg>
-                     ЗАМОВИТИ ДЗВІНОК
+                     ПІДПИСАТИСЬ НА РОЗСИЛКУ
                   </a>
                </div>
 
 
             </div>
-
             <div class="footer__bottom">
 
                <div class="footer__bottom--list">
@@ -689,6 +924,9 @@
             </svg>
             <svg class="icon">
                <use xlink:href="#Geotag-08"></use>
+            </svg>
+            <svg class="icon">
+               <use xlink:href="#Done_max-64"></use>
             </svg>
          </div> -->
 
@@ -922,6 +1160,50 @@
                      </linearGradient>
                   </defs>
                </symbol>
+
+
+               <symbol id="Done_max-64" viewBox="0 0 30 30">
+                  <defs>
+                     <style>
+                        .cls-1 {
+                           fill: url(#linear-gradient);
+                        }
+
+                        .cls-2 {
+                           fill: url(#linear-gradient-2);
+                        }
+
+                        .cls-3 {
+                           fill: url(#linear-gradient-3);
+                        }
+
+                        .cls-4 {
+                           fill: #fff;
+                        }
+                     </style>
+                     <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#e8e8e8" />
+                        <stop offset="1" stop-color="#fff" />
+                     </linearGradient>
+                     <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#fafafa" />
+                        <stop offset="1" stop-color="#e0e0e0" />
+                     </linearGradient>
+                     <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#004d47" />
+                        <stop offset="1" stop-color="#df9" />
+                     </linearGradient>
+                  </defs>
+                  <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                  <circle class="cls-2" cx="15" cy="15" r="11" />
+                  <circle class="cls-3" cx="15" cy="15" r="10" />
+                  <path class="cls-4"
+                     d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
+               </symbol>
+
 
             </svg>
          </div>
