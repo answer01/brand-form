@@ -208,7 +208,7 @@
 
                      <label class="checkbox">
                         <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
-                        <span class="checkbox-text">Я надаю згоду на обробку персональних даних</span>
+                        <span class="checkbox-text checkbox-bold">Я надаю згоду на обробку персональних даних</span>
                      </label>
                   </div>
                </div>
@@ -677,97 +677,98 @@
             </form>
 
 
+            <div class="order-bill-wrapper">
+               <div class="order-bill">
 
-            <div class="order-bill">
+                  <h4 class="order-bill__title">Замовлення</h4>
 
-               <h4 class="order-bill__title">Замовлення</h4>
+                  <div class="order-bill__items">
 
-               <div class="order-bill__items">
-
-                  <div class="order-bill__item">
-                     <div class="order-bill__category">Дитячий стіл</div>
-                     <div class="order-bill__product">
-                        <p>Brand Oxford Wood Max</p>
-                        <p class="price">16 800 грн</p>
+                     <div class="order-bill__item">
+                        <div class="order-bill__category">Дитячий стіл</div>
+                        <div class="order-bill__product">
+                           <p>Brand Oxford Wood Max</p>
+                           <p class="price">16 800 грн</p>
+                        </div>
+                        <div class="order-bill__garanty">
+                           <p>Подовжена гарантія (+1 рік)</p>
+                           <p class="price">800 грн</p>
+                        </div>
                      </div>
-                     <div class="order-bill__garanty">
-                        <p>Подовжена гарантія (+1 рік)</p>
-                        <p class="price">800 грн</p>
+
+                     <div class="order-bill__item">
+                        <div class="order-bill__category">Лампа світлодіодна</div>
+                        <div class="order-bill__product">
+                           <p>Brand DL-600</p>
+                           <p class="price">1 600 грн</p>
+                        </div>
+                        <div class="order-bill__action">
+                           <p>Знижка</p>
+                           <p class="price">-1600 грн</p>
+                        </div>
                      </div>
+
+                     <div class="order-bill__item">
+                        <div class="order-bill__category">Аксесуар</div>
+                        <div class="order-bill__product">
+                           <p>Подушка-розмальовка</p>
+                           <p class="price">900 грн</p>
+                        </div>
+                        <div class="order-bill__action">
+                           <p>Знижка</p>
+                           <p class="price">900 грн</p>
+                        </div>
+                     </div>
+
+
+                     <div class="order-bill__item">
+                        <div class="order-bill__category">Аксесуар</div>
+                        <div class="order-bill__product">
+                           <p>Маркери магнітні</p>
+                           <p class="price">260 грн</p>
+                        </div>
+                        <div class="order-bill__action">
+                           <p>Знижка</p>
+                           <p class="price">-260 грн</p>
+                        </div>
+                     </div>
+
+                     <div class="order-bill__item">
+                        <div class="order-bill__category">Аксесуар</div>
+                        <div class="order-bill__product">
+                           <p>Щось ще</p>
+                           <p class="price">260 грн</p>
+                        </div>
+                        <div class="order-bill__action">
+                           <p>Знижка</p>
+                           <p class="price">-260 грн</p>
+                        </div>
+                     </div>
+
                   </div>
 
-                  <div class="order-bill__item">
-                     <div class="order-bill__category">Лампа світлодіодна</div>
-                     <div class="order-bill__product">
-                        <p>Brand DL-600</p>
-                        <p class="price">1 600 грн</p>
-                     </div>
-                     <div class="order-bill__action">
-                        <p>Знижка</p>
-                        <p class="price">-1600 грн</p>
-                     </div>
+                  <div class="order-bill__courier">
+                     <p>Збирання товару кур’єрами</p>
+                     <p class="courier-price">250 грн</p>
                   </div>
 
-                  <div class="order-bill__item">
-                     <div class="order-bill__category">Аксесуар</div>
-                     <div class="order-bill__product">
-                        <p>Подушка-розмальовка</p>
-                        <p class="price">900 грн</p>
-                     </div>
-                     <div class="order-bill__action">
-                        <p>Знижка</p>
-                        <p class="price">900 грн</p>
-                     </div>
+                  <div class="action">
+                     <p>Загальна знижка:</p>
+                     <p class="action-all-price">-8 360 грн</p>
                   </div>
 
-
-                  <div class="order-bill__item">
-                     <div class="order-bill__category">Аксесуар</div>
-                     <div class="order-bill__product">
-                        <p>Маркери магнітні</p>
-                        <p class="price">260 грн</p>
-                     </div>
-                     <div class="order-bill__action">
-                        <p>Знижка</p>
-                        <p class="price">-260 грн</p>
-                     </div>
+                  <div class="total-price">
+                     <p>До сплати:</p>
+                     <p class="action-all-price">17 850 грн</p>
                   </div>
 
-                  <div class="order-bill__item">
-                     <div class="order-bill__category">Аксесуар</div>
-                     <div class="order-bill__product">
-                        <p>Щось ще</p>
-                        <p class="price">260 грн</p>
-                     </div>
-                     <div class="order-bill__action">
-                        <p>Знижка</p>
-                        <p class="price">-260 грн</p>
-                     </div>
+                  <button class="btn order-bill-btn">Підтвердити замовлення</button>
+
+                  <div class="order-conf">Підтверджуючи замовлення, я приймаю
+                     умови <a href="#">угоди користувача</a>
                   </div>
 
                </div>
-
-               <div class="courier">
-                  <p>Збирання товару кур’єрами</p>
-                  <p class="courier-price">250 грн</p>
-               </div>
-
-               <div class="action">
-                  <p>Загальна знижка:</p>
-                  <p class="action-all-price">-8 360 грн</p>
-               </div>
-
-               <div class="total-price">
-                  <p>До сплати:</p>
-                  <p class="action-all-price">17 850 грн</p>
-               </div>
-
-               <button class="btn order-bill-btn">Підтвердити замовлення</button>
-
-               <div class="order-conf">Підтверджуючи замовлення, я приймаю
-                  умови <a href="#">угоди користувача</a>
-               </div>
-
             </div>
 
          </div>
@@ -785,6 +786,7 @@
                   <picture>
                      <source srcset="images/logo-sm.svg" media="(max-width: 800px)" style="width: 128px; height:24px" />
                      <source srcset="images/logo.svg" media="(min-width: 801px)" style="width: 100%; height:58px" />
+                     <source srcset="images/logo.svg" media="(min-width: 1261px)" style="width: 100%; height:77px" />
                      <img src="images/logo.svg" alt="Логотип" />
                   </picture>
                </a>
