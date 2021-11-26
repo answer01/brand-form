@@ -167,12 +167,12 @@
                <h1 class="order-form__title">Оформлення замовлення</h1>
 
 
-               <div class="step step-active">
+               <div class="step step-active active">
                   <div class="step-count active">Крок 1</div>
 
                   <div class="step-top">
                      <div class="step__title active">Контактні дані</div>
-                     <svg class="step-check active icon" width="30" height="30">
+                     <svg class="step-check icon active" width="30" height="30">
                         <use xlink:href="#Done_max-64"></use>
                      </svg>
                      <button type="reset" class="steps-clear btn-gray">Стерти всю інформацію
@@ -182,7 +182,7 @@
                      </button>
                   </div>
 
-                  <div class="step-content">
+                  <div class="step-content step-hidden step-active">
                      <div class="step-content__links">
                         <a class="step-content__link active" href="#">Я новий клієнт</a>
                         <a class="step-content__link" href="#">Я постійний клієнт</a>
@@ -206,20 +206,20 @@
                         </div>
                      </div>
 
-                     <label class="checkbox">
+                     <label class="checkbox checkbox-bold">
                         <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
-                        <span class="checkbox-text checkbox-bold">Я надаю згоду на обробку персональних даних</span>
+                        <span class="checkbox-text">Я надаю згоду на обробку персональних даних</span>
                      </label>
                   </div>
                </div>
 
 
                <div class="step">
-                  <div class="step-count">Крок 2</div>
+                  <div class="step-count active">Крок 2</div>
 
                   <div class="step-top">
                      <div class="step__title active">Доставка</div>
-                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -263,7 +263,7 @@
                      </svg>
                   </div>
 
-                  <div class="step-hidden">
+                  <div class="step-hidden step2">
                      <div class="step-content">
                         <div class="step-content__links">
                            Місто:
@@ -279,10 +279,12 @@
 
 
                      <div class="step-choise">
-                        <div class="step-choise__item active">
+                        <div class="step-choise__item">
                            <label class="checkbox mr">
-                              <input class="checkbox-input" type="radio" value="1" name="form-delivery" checked>
-                              <span class="checkbox-text">Кур’єрська доставка<span>Безкоштовно</span> </span>
+                              <input class="checkbox-input" type="radio" value="1" name="form-delivery">
+                              <span class="checkbox-text">Кур’єрська доставка
+                                 <span class="checkbox-text__after">Безкоштовно</span>
+                              </span>
                            </label>
                            <div class="step-content__inputs step-inputs-row">
                               <input class="step-input__street" autocomplete="off" type="text" name="form[]"
@@ -296,7 +298,9 @@
                         <div class="step-choise__item">
                            <label class="checkbox">
                               <input class="checkbox-input" type="radio" value="1" name="form-delivery">
-                              <span class="checkbox-text">Самовивіз<span>Безкоштовно</span></span>
+                              <span class="checkbox-text">Самовивіз
+                                 <span class="checkbox-text__after">Безкоштовно</span>
+                              </span>
                            </label>
                         </div>
                         <p class="step-choise__text">
@@ -311,11 +315,11 @@
                </div>
 
                <div class="step">
-                  <div class="step-count">Крок 3</div>
+                  <div class="step-count active">Крок 3</div>
 
                   <div class="step-top">
                      <div class="step__title active">Оплата</div>
-                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -362,9 +366,9 @@
                   <div class="step-hidden">
 
                      <div class="step-choise">
-                        <div class="step-choise__item active">
+                        <div class="step-choise__item">
                            <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="payment" checked>
+                              <input class="checkbox-input" type="radio" value="1" name="payment">
                               <span class="checkbox-text">Кур’єру при отриманні (лише готівка) </span>
                            </label>
                         </div>
@@ -392,12 +396,12 @@
                </div>
 
 
-               <div class="step">
-                  <div class="step-count">Крок 4</div>
+               <div class="step active">
+                  <div class="step-count active">Крок 4</div>
 
                   <div class="step-top">
                      <div class="step__title active">Збирання</div>
-                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -463,16 +467,18 @@
                      </div>
 
                      <div class="step-choise">
-                        <div class="step-choise__item active">
+                        <div class="step-choise__item">
                            <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="cureir" checked>
+                              <input class="checkbox-input" type="radio" value="1" name="cureir">
                               <span class="checkbox-text">Збирання нашими кур’єрами<span>250 грн</span></span>
                            </label>
                         </div>
                         <div class="step-choise__item">
                            <label class="checkbox">
                               <input class="checkbox-input" type="radio" value="1" name="cureir">
-                              <span class="checkbox-text selfcurier">Самостійно<span>Безкоштовно</span></span>
+                              <span class="checkbox-text selfcurier">Самостійно<span
+                                    class="checkbox-text__after">Безкоштовно</span>
+                              </span>
                            </label>
                         </div>
                      </div>
@@ -482,11 +488,11 @@
 
 
                <div class="step">
-                  <div class="step-count">Крок 5</div>
+                  <div class="step-count active">Крок 5</div>
 
                   <div class="step-top step-top-garanty">
                      <div class="step__title active">Додаткова гарантія</div>
-                     <svg class="step-check active icon" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -531,10 +537,12 @@
                   </div>
 
                   <div class="step-hidden">
-                     <div class="step-choise__item step-choise__item--garanty active">
+                     <div class="step-choise__item step-choise__item--garanty">
                         <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="garanty" checked>
-                           <span class="checkbox-text">Так<span>800 грн</span></span>
+                           <input class="checkbox-input" type="radio" value="1" name="garanty">
+                           <span class="checkbox-text">Так
+                              <span class="checkbox-text__after">800 грн</span>
+                           </span>
                         </label>
 
 
@@ -559,7 +567,8 @@
                                  <li class="step-choise__product">
                                     <div class="step-choise__product--content">
                                        <label class="checkbox checkbox-product">
-                                          <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                                          <input class="checkbox-input checkbox-product-input" type="checkbox" value="1"
+                                             name="form[]">
                                           <span class="checkbox-text fs0">
                                              1
                                           </span>
@@ -605,7 +614,8 @@
                                  <li class="step-choise__product">
                                     <div class="step-choise__product--content">
                                        <label class="checkbox checkbox-product">
-                                          <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                                          <input class="checkbox-input checkbox-product-input" type="checkbox" value="1"
+                                             name="form[]">
                                           <span class="checkbox-text fs0">
                                              1
                                           </span>
@@ -657,14 +667,15 @@
 
                         </div>
                      </div>
-
-
-                     <div class="step-choise__item">
+                     <div class="step-choise__item step-choise__item--garanty">
                         <label class="checkbox">
                            <input class="checkbox-input" type="radio" value="1" name="garanty">
-                           <span class="checkbox-text">Hi<span>Безкоштовно</span></span>
+                           <span class="checkbox-text">Hi
+                              <span class="checkbox-text__after">Безкоштовно</span>
+                           </span>
                         </label>
                      </div>
+
                   </div>
 
 
@@ -763,7 +774,7 @@
                      <p class="action-all-price">17 850 грн</p>
                   </div>
 
-                  <button class="btn order-bill-btn">Підтвердити замовлення</button>
+                  <button class="btn order-bill-btn disabled">Підтвердити замовлення</button>
 
                   <div class="order-conf">Підтверджуючи замовлення, я приймаю
                      умови <a href="#">угоди користувача</a>
@@ -1214,7 +1225,7 @@
    </div>
 
 
-   <script src="js/main.min.js"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>

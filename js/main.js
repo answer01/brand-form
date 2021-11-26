@@ -1,7 +1,6 @@
-$(function () {
+// $(function () {
 
-})
-
+// })
 
 // select-head
 
@@ -162,59 +161,59 @@ if (spollersArray.length > 0) {
 //SlideToggle
 let _slideUp = (target, duration = 500) => {
    if (!target.classList.contains('_slide')) {
-       target.classList.add('_slide');
-       target.style.transitionProperty = 'height, margin, padding';
-       target.style.transitionDuration = duration + 'ms';
-       target.style.height = target.offsetHeight + 'px';
-       target.offsetHeight;
-       target.style.overflow = 'hidden';
-       target.style.height = 0;
-       target.style.paddingTop = 0;
-       target.style.paddingBottom = 0;
-       target.style.marginTop = 0;
-       target.style.marginBottom = 0;
-       window.setTimeout(() => {
-           target.hidden = true;
-           target.style.removeProperty('height');
-           target.style.removeProperty('padding-top');
-           target.style.removeProperty('padding-bottom');
-           target.style.removeProperty('margin-top');
-           target.style.removeProperty('margin-bottom');
-           target.style.removeProperty('overflow');
-           target.style.removeProperty('transition-duration');
-           target.style.removeProperty('transition-property');
-           target.classList.remove('_slide');
-       }, duration);
+      target.classList.add('_slide');
+      target.style.transitionProperty = 'height, margin, padding';
+      target.style.transitionDuration = duration + 'ms';
+      target.style.height = target.offsetHeight + 'px';
+      target.offsetHeight;
+      target.style.overflow = 'hidden';
+      target.style.height = 0;
+      target.style.paddingTop = 0;
+      target.style.paddingBottom = 0;
+      target.style.marginTop = 0;
+      target.style.marginBottom = 0;
+      window.setTimeout(() => {
+      target.hidden = true;
+      target.style.removeProperty('height');
+      target.style.removeProperty('padding-top');
+      target.style.removeProperty('padding-bottom');
+      target.style.removeProperty('margin-top');
+      target.style.removeProperty('margin-bottom');
+      target.style.removeProperty('overflow');
+      target.style.removeProperty('transition-duration');
+      target.style.removeProperty('transition-property');
+      target.classList.remove('_slide');
+      }, duration);
    }
 };
 let _slideDown = (target, duration = 500) => {
    if (!target.classList.contains('_slide')) {
-       target.classList.add('_slide');
-       if (target.hidden) {
-           target.hidden = false;
-       }
-       let height = target.offsetHeight;
-       target.style.overflow = 'hidden';
-       target.style.height = 0;
-       target.style.paddingTop = 0;
-       target.style.paddingBottom = 0;
-       target.style.marginTop = 0;
-       target.style.marginBottom = 0;
-       target.offsetHeight;
-       target.style.transitionProperty = 'height, margin, padding';
-       target.style.transitionDuration = duration + 'ms';
-       target.style.height = height + 'px';
-       target.style.removeProperty('padding-top');
-       target.style.removeProperty('padding-bottom');
-       target.style.removeProperty('margin-top');
-       target.style.removeProperty('margin-bottom');
-       window.setTimeout(() => {
-           target.style.removeProperty('height');
-           target.style.removeProperty('overflow');
-           target.style.removeProperty('transition-duration');
-           target.style.removeProperty('transition-property');
-           target.classList.remove('_slide');
-       }, duration);
+      target.classList.add('_slide');
+      if (target.hidden) {
+         target.hidden = false;
+      }
+      let height = target.offsetHeight;
+      target.style.overflow = 'hidden';
+      target.style.height = 0;
+      target.style.paddingTop = 0;
+      target.style.paddingBottom = 0;
+      target.style.marginTop = 0;
+      target.style.marginBottom = 0;
+      target.offsetHeight;
+      target.style.transitionProperty = 'height, margin, padding';
+      target.style.transitionDuration = duration + 'ms';
+      target.style.height = height + 'px';
+      target.style.removeProperty('padding-top');
+      target.style.removeProperty('padding-bottom');
+      target.style.removeProperty('margin-top');
+      target.style.removeProperty('margin-bottom');
+      window.setTimeout(() => {
+      target.style.removeProperty('height');
+      target.style.removeProperty('overflow');
+      target.style.removeProperty('transition-duration');
+      target.style.removeProperty('transition-property');
+      target.classList.remove('_slide');
+      }, duration);
    }
 };
 
@@ -229,27 +228,26 @@ let _slideToggle = (target, duration = 500) => {
 //QUANTITY
 let quantityButtons = document.querySelectorAll('.quantity__button');
 if (quantityButtons.length > 0) {
-    for (let index = 0; index < quantityButtons.length; index++) {
-        const quantityButton = quantityButtons[index];
-        quantityButton.addEventListener('click', function (e) {
-            let value = parseInt(quantityButton.closest('.quantity').querySelector('input').value);
-            if (quantityButton.classList.contains('quantity__button_plus')) {
-                value++;
-            } else {
-                value = value - 1;
-                if (value < 1) {
-                    value = 1;
-                }
-            }
-            quantityButton.closest('.quantity').querySelector('input').value = value;
-        });
-    }
+	for (let index = 0; index < quantityButtons.length; index++) {
+		const quantityButton = quantityButtons[index];
+		quantityButton.addEventListener("click", function (e) {
+			let value = parseInt(quantityButton.closest('.quantity').querySelector('input').value);
+			if (quantityButton.classList.contains('quantity__button_plus')) {
+				value++;
+			} else {
+				value = value - 1;
+				if (value < 1) {
+					value = 1
+				}
+			}
+			quantityButton.closest('.quantity').querySelector('input').value = value;
+		});
+	}
 }
 
 
 
-
-// step-choise
+//step-choise
 
 const stepChoises = document.querySelectorAll('.step-choise__item');
 stepChoises.forEach((choise) => {
@@ -266,9 +264,32 @@ stepChoises.forEach((choise) => {
     });
 });
 
-//form-steps
-// let blocks = Object.values(document.querySelectorAll('.step'))
+//garanty-hidden
+
+// const garantyChoises = document.querySelectorAll('.step-choise__product');
+// garantyChoises.forEach((garantyChoise) => {
+//    garantyChoise.addEventListener('click', function () {
+//         const stepQuantity = this.closest.querySelectorAll('.step-quantity');
+//         console.log(stepQuantity)
+//         stepQuantity.forEach((el) => {
+          
+//             const checkbox = el.querySelector('.checkbox-product-input');
+//             el.classList.remove('active');
+//             if (checkbox && checkbox.checked) {
+//                 el.classList.add('active');
+//             }
+//         });
+//     });
+// });
+
+// let blocks = Object.values(document.querySelectorAll('.step-hidden'));
 // let counter = 1
+
+// let orderBillBtn = document.querySelector('.order-bill-btn')
+// let stepTitle = document.querySelectorAll('.step__title')
+// let stepCount = document.querySelectorAll('.step-count')
+// let stepCheck = document.querySelectorAll('.step-check')
+
 // const checkBlock = (block) => {
 //   if (block.classList.contains('step-active')) {
 //     block.style = 'display: block'
@@ -278,7 +299,7 @@ stepChoises.forEach((choise) => {
 // }
 
 // const listener = (event) => {
-//   const parent = event.target.closest('.step');
+//   const parent = event.target.closest('.step-hidden');
 //   const inputs = Object.values(parent.querySelectorAll('input'));
 //   const inputsValue = inputs.map((el) => {
 //     if (el.type == 'text') {
@@ -293,32 +314,94 @@ stepChoises.forEach((choise) => {
 //   })
 //   if (inputsValue.every((el) => el)) {
 //     parent.style = 'display: block'
-//     if (counter < 2) {
-//       blocks[counter].style = 'display: block'
-//       counter++
-//     } else {
-//       blocks[2].style = 'display: block';
-//       blocks[3].style = 'display: block';
-//       blocks[4].style = 'display: block';
-//     }
-//   }
+//     console.log(counter)
+//       if (counter < 5) {
+//          blocks[counter].style = 'display: block';
+//          blocks[counter - 1].classList.add('active');
+//          counter++;
+//       }
+//    }
 // }
+
 // blocks.forEach((el) => checkBlock(el))
-// blocks[0].addEventListener('change', listener)
-// blocks[1].addEventListener('change', listener)
+// blocks.forEach((el) => {
+//   el.addEventListener('change', listener)
+// })
 
 
-// let clearBtn = document.querySelector(".steps-clear");
-// let inputsText = document.querySelectorAll('input');
-// clearBtn.addEventListener("click", function() {
-//    inputsText.forEach((item) => {
-//       if (item.type == 'text') {
-//          item.value = ''
-//    };
-//   })
+
+// function stepActive() {
+//    blocks.forEach((el) => {
+//       if (el.contains.classList('active')) {
+//          parent.closest.stepTitle.classList.add('active');
+//          parent.closest.stepCount.classList.add('active');
+//          parent.closest.stepCheck.classList.add('active');
+//       } else {
+//          parent.closest.stepTitle.classList.revome('active');
+//          parent.closest.stepCount.classList.revome('active');
+//          parent.closest.stepCheck.classList.revome('active');
+//       }
+//   });
+// }
+
+// stepActive();
+
+// blocks.forEach((item) => {
+//    if (item.classList.contains('active')) {
+//       orderBillBtn.classList.remove('disabled');
+//    } else {
+//       orderBillBtn.classList.add('disabled')
+//    }
 // });
 
 
+// const step1 = document.querySelector('.step1')
+// const step2 = document.querySelector('.step2')
+// console.log(step1)
+
+// const blocks1 = step1.querySelectorAll('input').value
+// console.log(blocks1)
+
+// function listen1() {
+//    if(blocks1.length > 0) {
+//       step2.classList.add('active')
+//    }
+// }
+
+
+// console.log(blocks1)
+
+
+// blocks1.forEach((block1) =>{
+//    blocks1.addEventListener('change', function(e){
+//       if(block1.length >= 1){ 
+//          step2.classList.add('active');
+//       }
+//    });
+// };
+
+
+
+// const blocks1 = document.querySelectorAll('input');
+// blocks1.forEach((block1) =>{
+//    block1.addEventListener('keyup', ()=> {
+//       if(blocks1.length > 0) {
+//          step2.classList.add('active')
+//       } 
+//    })
+// });
+
+
+
+
+// console.log(orderBillBtn)
+
+// function checkBillBtn() {
+//    if (blocks[4].style = 'display: block') {
+//       orderBillBtn.classList.remove('disabled');
+//    }
+// }
+// checkBillBtn();
 
 
 
