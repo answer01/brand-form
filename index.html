@@ -35,7 +35,8 @@
                   <a class="icon-menu-link" href="#">
                      <svg class="icon">
                         <use xlink:href="#Catalog-02"></use>
-                     </svg>КАТАЛОГ
+                     </svg>
+                     КАТАЛОГ
                   </a>
                </li>
                <li><a href="#">ПАРТИ ТА СТОЛИ</a></li>
@@ -107,7 +108,8 @@
                <a class="header__icon icon-menu-link mobail" href="#">
                   <svg class="icon" width="20" height="20">
                      <use xlink:href="#Catalog-02"></use>
-                  </svg>КАТАЛОГ
+                  </svg>
+                  КАТАЛОГ
                </a>
 
                <a href="#" class="header__icon">
@@ -169,10 +171,10 @@
 
                <div class="step step-active active">
                   <div class="step-count active">Крок 1</div>
-
+                  <!--changed везде удалил active класс у step-check-->
                   <div class="step-top">
                      <div class="step__title active">Контактні дані</div>
-                     <svg class="step-check icon active" width="30" height="30">
+                     <svg class="step-check icon " width="30" height="30">
                         <use xlink:href="#Done_max-64"></use>
                      </svg>
                      <button type="reset" class="steps-clear btn-gray">Стерти всю інформацію
@@ -182,7 +184,9 @@
                      </button>
                   </div>
 
-                  <div class="step-content step-hidden step-active">
+                  <!--changed удалил класс step-hidden-->
+
+                  <div class="step-content  step-active">
                      <div class="step-content__links">
                         <a class="step-content__link active" href="#">Я новий клієнт</a>
                         <a class="step-content__link" href="#">Я постійний клієнт</a>
@@ -207,7 +211,7 @@
                      </div>
 
                      <label class="checkbox checkbox-bold">
-                        <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
+                        <input class="checkbox-input" type="checkbox" value="1" name="form[]">
                         <span class="checkbox-text">Я надаю згоду на обробку персональних даних</span>
                      </label>
                   </div>
@@ -219,7 +223,7 @@
 
                   <div class="step-top">
                      <div class="step__title active">Доставка</div>
-                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon " width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -277,11 +281,12 @@
                         </div>
                      </div>
 
-
+                     <!--changed добавил id к чекбоксам-->
                      <div class="step-choise">
                         <div class="step-choise__item">
                            <label class="checkbox mr">
-                              <input class="checkbox-input" type="radio" value="1" name="form-delivery">
+                              <input id="form-delivery" class="checkbox-input" type="radio" value="1"
+                                 name="form-delivery">
                               <span class="checkbox-text">Кур’єрська доставка
                                  <span class="checkbox-text__after">Безкоштовно</span>
                               </span>
@@ -297,7 +302,8 @@
                         </div>
                         <div class="step-choise__item">
                            <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="form-delivery">
+                              <input id="form-pickup" class="checkbox-input" type="radio" value="1"
+                                 name="form-delivery">
                               <span class="checkbox-text">Самовивіз
                                  <span class="checkbox-text__after">Безкоштовно</span>
                               </span>
@@ -306,7 +312,8 @@
                         <p class="step-choise__text">
                            Адреса пункту самовивозу: <span>вулиця Новий шлях, 22</span> (район станції метро
                            “Академмістечко”).
-                           Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у суботу
+                           Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у
+                           суботу
                            та
                            неділю.
                         </p>
@@ -319,7 +326,7 @@
 
                   <div class="step-top">
                      <div class="step__title active">Оплата</div>
-                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon " width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -401,7 +408,7 @@
 
                   <div class="step-top">
                      <div class="step__title active">Збирання</div>
-                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon " width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -447,7 +454,8 @@
 
                   <div class="step-hidden">
                      <div class="step-choise__text">
-                        У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний для
+                        У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний
+                        для
                         Вас
                         спосіб збирання.
                      </div>
@@ -470,7 +478,8 @@
                         <div class="step-choise__item">
                            <label class="checkbox">
                               <input class="checkbox-input" type="radio" value="1" name="cureir">
-                              <span class="checkbox-text">Збирання нашими кур’єрами<span>250 грн</span></span>
+                              <span class="checkbox-text">Збирання нашими кур’єрами<span
+                                    class="checkbox-text__after">250 грн</span></span>
                            </label>
                         </div>
                         <div class="step-choise__item">
@@ -492,7 +501,7 @@
 
                   <div class="step-top step-top-garanty">
                      <div class="step__title active">Додаткова гарантія</div>
-                     <svg class="step-check icon active" width="30" height="30" id="Layer_1" data-name="Layer 1"
+                     <svg class="step-check icon " width="30" height="30" id="Layer_1" data-name="Layer 1"
                         viewBox="0 0 30 30">
                         <defs>
                            <style>
@@ -537,14 +546,13 @@
                   </div>
 
                   <div class="step-hidden">
-                     <div class="step-choise__item step-choise__item--garanty">
+                     <div class="step-choise__item step-choise__item--garanty active">
                         <label class="checkbox">
                            <input class="checkbox-input" type="radio" value="1" name="garanty">
                            <span class="checkbox-text">Так
                               <span class="checkbox-text__after">800 грн</span>
                            </span>
                         </label>
-
 
 
                         <div class="step-choise__text">
@@ -576,7 +584,8 @@
                                        <div class="step-choise__product-desc">
                                           <p class="step-choise__product--category">Дитячий стіл</p>
                                           <p class="step-choise__product--title">Brand Oxford Wood Max</p>
-                                          <p class="step-choise__product--garanty">+800 грн за 1 рік гарантії</p>
+                                          <p class="step-choise__product--garanty">+800 грн за 1 рік
+                                             гарантії</p>
                                        </div>
                                     </div>
                                     <div class="step-quantity">
@@ -623,7 +632,8 @@
                                        <div class="step-choise__product-desc">
                                           <p class="step-choise__product--category">Дитяче крісло</p>
                                           <p class="step-choise__product--title">Brand Match Graybase</p>
-                                          <p class="step-choise__product--garanty">+500 грн за 1 рік гарантії</p>
+                                          <p class="step-choise__product--garanty">+500 грн за 1 рік
+                                             гарантії</p>
                                        </div>
                                     </div>
                                     <div class="step-quantity">
@@ -679,11 +689,7 @@
                   </div>
 
 
-
-
-
                </div>
-
 
 
             </form>
@@ -774,7 +780,8 @@
                      <p class="action-all-price">17 850 грн</p>
                   </div>
 
-                  <button class="btn order-bill-btn disabled">Підтвердити замовлення</button>
+                  <button id="disable-button" disabled="disabled" class="btn order-bill-btn disabled">Підтвердити
+                     замовлення</button>
 
                   <div class="order-conf">Підтверджуючи замовлення, я приймаю
                      умови <a href="#">угоди користувача</a>
@@ -888,61 +895,60 @@
             </div>
 
 
-
          </div>
 
 
          <!-- <div class="icons">
-            <svg class="icon">
-               <use xlink:href="#Bag-06"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Check-mark-22"></use>
-            </svg><svg class="icon">
-               <use xlink:href="#Check-mark-MED-36"></use>
-            </svg><svg class="icon">
-               <use xlink:href="#Catalog-02"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Instagram-26"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Like-05"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Mail-37"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Online-07"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Phone-09"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Search-03"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Temp-logo-42"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#User-profile-04"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Delete-35"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Dropdown-10"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Facebook-27"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Geotag-08"></use>
-            </svg>
-            <svg class="icon">
-               <use xlink:href="#Done_max-64"></use>
-            </svg>
-         </div> -->
+           <svg class="icon">
+              <use xlink:href="#Bag-06"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Check-mark-22"></use>
+           </svg><svg class="icon">
+              <use xlink:href="#Check-mark-MED-36"></use>
+           </svg><svg class="icon">
+              <use xlink:href="#Catalog-02"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Instagram-26"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Like-05"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Mail-37"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Online-07"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Phone-09"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Search-03"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Temp-logo-42"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#User-profile-04"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Delete-35"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Dropdown-10"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Facebook-27"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Geotag-08"></use>
+           </svg>
+           <svg class="icon">
+              <use xlink:href="#Done_max-64"></use>
+           </svg>
+        </div> -->
 
          <div class="sprites">
             <svg width="0" height="0" class="hidden">
@@ -1225,7 +1231,7 @@
    </div>
 
 
-   <script src="js/main.js"></script>
+   <script src="js/main.min.js"></script>
 </body>
 
 </html>
