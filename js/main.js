@@ -261,11 +261,11 @@ stepChoises.forEach((choise) => {
    });
 });
 
-//Check-form
-
 const stepCheckIcon = document.querySelectorAll(".step-check")
 const stepHidden = document.querySelectorAll(".step-hidden")
 stepHidden.forEach(el => el.style.display = "none")
+const stepCounts = document.querySelectorAll(".step-count")
+const stepTitle = document.querySelectorAll(".step__title")
 
 //inputs step-one
 const inName = document.querySelector(".step-input__name")
@@ -331,6 +331,8 @@ inName.addEventListener("keyup", (e) => {
        checkboxOne.checked) {
        stepHidden[0].style.display = "block"
        stepCheckIcon[0].classList.add("active")
+       stepCounts[1].classList.add("active")
+       stepTitle[1].classList.add("active")
    } else {
        stepHidden[0].style.display = "none"
        stepCheckIcon[0].classList.remove("active")
@@ -346,6 +348,8 @@ inLastName.addEventListener("keyup", (e) => {
        checkboxOne.checked) {
        stepHidden[0].style.display = "block"
        stepCheckIcon[0].classList.add("active")
+       stepCounts[1].classList.add("active")
+       stepTitle[1].classList.add("active")
 
    } else {
        stepHidden[0].style.display = "none"
@@ -362,6 +366,8 @@ inPhone.addEventListener("keyup", (e) => {
        checkboxOne.checked) {
        stepHidden[0].style.display = "block"
        stepCheckIcon[0].classList.add("active")
+       stepCounts[1].classList.add("active")
+       stepTitle[1].classList.add("active")
 
    } else {
        stepHidden[0].style.display = "none"
@@ -378,6 +384,8 @@ inMail.addEventListener("keyup", (e) => {
        checkboxOne.checked) {
        stepHidden[0].style.display = "block"
        stepCheckIcon[0].classList.add("active")
+       stepCounts[1].classList.add("active")
+       stepTitle[1].classList.add("active")
 
    } else {
        stepHidden[0].style.display = "none"
@@ -394,6 +402,8 @@ checkboxOne.addEventListener("change", (e) => {
        checkboxOne.checked) {
        stepHidden[0].style.display = "block"
        stepCheckIcon[0].classList.add("active")
+       stepCounts[1].classList.add("active")
+       stepTitle[1].classList.add("active")
 
    } else {
        stepHidden[0].style.display = "none"
@@ -434,6 +444,8 @@ checkPickup.addEventListener("click", (e) => {
    dataSteps.stepTwo.checkPickup = e.target.checked
    dataSteps.stepTwo.checkDelivery.checkbox = false
    disabledInput()
+   stepCounts[2].classList.add("active")
+   stepTitle[2].classList.add("active")
 })
 
 inStreet.addEventListener("keyup", (e) => {
@@ -445,6 +457,8 @@ inStreet.addEventListener("keyup", (e) => {
        dataSteps.stepTwo.checkDelivery.apartment) {
        stepHidden[1].style.display = "block"
        stepCheckIcon[1].classList.add("active")
+       stepCounts[2].classList.add("active")
+       stepTitle[2].classList.add("active")
 
    } else {
        stepHidden[1].style.display = "none"
@@ -460,6 +474,8 @@ inHouse.addEventListener("keyup", (e) => {
        dataSteps.stepTwo.checkDelivery.apartment) {
        stepHidden[1].style.display = "block"
        stepCheckIcon[1].classList.add("active")
+       stepCounts[2].classList.add("active")
+       stepTitle[2].classList.add("active")
 
    } else {
        stepHidden[1].style.display = "none"
@@ -476,6 +492,8 @@ inApartment.addEventListener("keyup", (e) => {
        dataSteps.stepTwo.checkDelivery.apartment) {
        stepHidden[1].style.display = "block"
        stepCheckIcon[1].classList.add("active")
+       stepCounts[2].classList.add("active")
+       stepTitle[2].classList.add("active")
 
    } else {
        stepHidden[1].style.display = "none"
@@ -489,6 +507,8 @@ radioStep.forEach((el) => {
            dataSteps.stepTree.radioValue = e.target.value
            stepHidden[2].style.display = "block"
            stepCheckIcon[2].classList.add("active")
+           stepCounts[3].classList.add("active")
+           stepTitle[3].classList.add("active")
        })
    }
 })
@@ -499,6 +519,9 @@ radioStep.forEach((el) => {
            dataSteps.stepFour.radioValue = e.target.value
            stepHidden[3].style.display = "block"
            stepCheckIcon[3].classList.add("active")
+           stepCounts[4].classList.add("active")
+           stepTitle[4].classList.add("active")
+
        })
    }
 })
@@ -567,3 +590,5 @@ stepGuarantees[1].addEventListener('change', (e) => {
        disableBtn.removeAttribute("disabled")
    }
 })
+
+
