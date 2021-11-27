@@ -323,6 +323,7 @@ const dataSteps = {
 
 
 inName.addEventListener("keyup", (e) => {
+   dataSteps.stepOne.name = e.target.value
 
    if (inName.value.length &&
        inLastName.value.length &&
