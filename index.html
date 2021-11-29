@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
+
+
 <body>
 
    <header class="header">
@@ -169,21 +171,21 @@
                <h1 class="order-form__title">Оформлення замовлення</h1>
 
 
-               <div class="step step-active active">
+               <div class="step active">
                   <div class="step-count active">Крок 1</div>
                   <div class="step-top">
                      <div class="step__title active">Контактні дані</div>
                      <svg class="step-check icon" width="30" height="30">
                         <use xlink:href="#Done_max-64"></use>
                      </svg>
-                     <button type="reset" class="steps-clear btn-gray">Стерти всю інформацію
+                     <a class="steps-clear btn-gray" href="/">Стерти всю інформацію
                         <svg class="icon">
                            <use xlink:href="#Delete-35"></use>
                         </svg>
-                     </button>
+                     </a>
                   </div>
 
-                  <div class="step-content  step-active">
+                  <div class="step-content">
                      <div class="step-content__links">
                         <a class="step-content__link active" href="#">Я новий клієнт</a>
                         <a class="step-content__link" href="#">Я постійний клієнт</a>
@@ -208,7 +210,7 @@
                      </div>
 
                      <label class="checkbox">
-                        <input class="checkbox-input" type="checkbox" value="1" name="form[]">
+                        <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
                         <span class="checkbox-text checkbox-bold">Я надаю згоду на обробку персональних даних</span>
                      </label>
                   </div>
@@ -226,16 +228,28 @@
                   </div>
 
                   <div class="step-hidden step2">
-                     <div class="step-content">
-                        <div class="step-content__links">
+                     <div class="step-content-location">
+                        <div class="location-title">
                            Місто:
-                           <div class="location">
-                              <svg class="icon" width="8" height="12">
-                                 <use xlink:href="#Geotag-08"></use>
-                              </svg>
-                              <span>Київ</span>
+                        </div>
+                        <div class="location">
+                           <svg class="icon" width="8" height="12">
+                              <use xlink:href="#Geotag-08"></use>
+                           </svg>
+                           <span id="location-value" class="location-value">
+                              Київ
+                           </span>
+                        </div>
+                        <button type="button" class="step-content__location-link">обрати інше місто</button>
+
+                        <div class="city__select hidden">
+                           <div class="select-head select-city-head">
+                              <input id="select-city-curent" type="text" class="select-city-curent" value=""
+                                 autocomplete="off">
                            </div>
-                           <a class="step-content__location-link" href="#">обрати інше місто</a>
+                           <div class="select-city-body">
+
+                           </div>
                         </div>
                      </div>
 
@@ -380,8 +394,47 @@
 
                   <div class="step-top step-top-garanty">
                      <div class="step__title">Додаткова гарантія</div>
-                     <svg class="step-check icon " width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
+                     <svg class="step-check icon " id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30 viewBox=" 0 0 30 30">
+                        <defs>
+                           <style>
+                              .cls-1 {
+                                 fill: url(#linear-gradient);
+                              }
+
+                              .cls-2 {
+                                 fill: url(#linear-gradient-2);
+                              }
+
+                              .cls-3 {
+                                 fill: url(#linear-gradient-3);
+                              }
+
+                              .cls-4 {
+                                 fill: #fff;
+                              }
+                           </style>
+                           <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#e8e8e8" />
+                              <stop offset="1" stop-color="#fff" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-2" x1="22.77817" y1="22.77817" x2="7.22183" y2="7.22183"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#fafafa" />
+                              <stop offset="1" stop-color="#e0e0e0" />
+                           </linearGradient>
+                           <linearGradient id="linear-gradient-3" x1="3.93617" y1="3.93617" x2="25.95754" y2="25.95754"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#004d47" />
+                              <stop offset="1" stop-color="#df9" />
+                           </linearGradient>
+                        </defs>
+                        <circle class="cls-1" cx="15" cy="15.00018" r="15" />
+                        <circle class="cls-2" cx="15" cy="15" r="11" />
+                        <circle class="cls-3" cx="15" cy="15" r="10" />
+                        <path class="cls-4"
+                           d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                      </svg>
                   </div>
 
@@ -951,10 +1004,26 @@
                      </linearGradient>
                   </defs>
                </symbol>
+               <symbol id="Done_max-64" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 
-
-               <symbol id="Done_max-64" viewBox="0 0 30 30">
                   <defs>
+                     <style>
+                        .cls-1 {
+                           fill: url(#linear-gradient);
+                        }
+
+                        .cls-2 {
+                           fill: url(#linear-gradient-2);
+                        }
+
+                        .cls-3 {
+                           fill: url(#linear-gradient-3);
+                        }
+
+                        .cls-4 {
+                           fill: #fff;
+                        }
+                     </style>
                      <linearGradient id="linear-gradient" x1="25.6066" y1="25.60678" x2="4.3934" y2="4.39358"
                         gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#e8e8e8" />
@@ -977,15 +1046,15 @@
                   <path class="cls-4"
                      d="M13.17893,18.8211l-3.9999-4a.61126.61126,0,0,1,0-.86445h0a.61127.61127,0,0,1,.86447,0l3.56772,3.56775,6.3453-6.3454a.61124.61124,0,0,1,.86445,0h0a.61124.61124,0,0,1,0,.86445L14.0427,18.82113A.6108.6108,0,0,1,13.17893,18.8211Z" />
                </symbol>
-
-
             </svg>
          </div>
       </footer>
    </div>
 
-
    <script src="js/main.min.js"></script>
+
+
+
 </body>
 
 </html>

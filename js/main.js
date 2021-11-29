@@ -1,5 +1,4 @@
-// select-head
-
+// select-hea 
 let select = function () {
    let selectHeader = document.querySelectorAll('.select-head');
    let selectItem = document.querySelectorAll('.select-item');
@@ -25,6 +24,106 @@ let select = function () {
    }
 };
 select();
+
+//SELECT CITIES
+const cities = [
+   {city: "Київ", text: "Київська область"},
+   {city: "Харків", text: "Харківська область"},
+   {city: "Одеса", text: "Одеська область"},
+   {city: "Миколаїв", text: "Миколаївська область"},
+   {city: "Севастополь", text: "Севастопольська область"},
+   {city: "Запоріжжя", text: "Запорізька область"},
+   {city: "Донецьк", text: "Донецька область"},
+   {city: "Дніпро", text: "Дніпровська область"},
+   {city: "Одеса", text: "Одеська область"},
+   {city: "Харків", text: "Харківська область"},
+]
+
+let citySelect = document.querySelector('.city__select');
+let cityLocation = document.querySelector('.location');
+let cityLocationBtn = document.querySelector('.step-content__location-link');
+let locationValue = document.querySelector('.location-value');
+
+let cityCurrent = citySelect.querySelector('.select-city-curent');
+let citiesList = citySelect.querySelector('.select-city-body');
+console.log(cityCurrent)
+
+cities.forEach( el => {
+   const newElement =  document.createElement('div');
+   newElement.classList.add('select-city-item');
+   newElement.innerHTML = `<span class="select-city-item__value">${el.city}
+   </span>, ${el.text}` ;
+   citiesList.append(newElement);
+   newElement.addEventListener("click", selectChooseCity)
+})
+
+function selectChooseCity() {
+   // e.stopPropagation();
+    let text = this.querySelector('.select-city-item__value').innerText,
+    currentCity = cityCurrent.value;
+    currentCity = text.trim();
+    citySelect.classList.toggle('hidden');
+    cityLocation.classList.toggle('hidden');
+    cityLocationBtn.classList.toggle('hidden');
+    locationValue.innerText = currentCity;
+    cityCurrent.value = text.trim();
+}
+// ----
+
+   cityCurrent.addEventListener("keyup", (e) => {
+  const filteredCities = cities.filter(el => {
+  return el.city.toLowerCase().includes(e.target.value.toLowerCase())
+ })
+
+   citiesList.innerHTML = ''
+   filteredCities.forEach( el => {
+const newElement =  document.createElement('div')
+newElement.classList.add('select-city-item')
+newElement.innerHTML = `<span class="select-city-item__value">${el.city}
+</span>, ${el.text}` 
+citiesList.append(newElement)
+ })
+
+ let selectCityHeader = document.querySelectorAll('.select-city-head');
+   let selectCityItem = document.querySelectorAll('.select-city-item');
+
+   selectCityHeader.forEach(item => {
+       item.addEventListener('click', selectToggleCity)
+   });
+
+   selectCityItem.forEach(item => {
+       item.addEventListener('click', selectChooseCity)
+   });
+
+   function selectToggleCity(e) {
+      e.stopPropagation();
+      this.parentElement.classList.add('active');
+   }
+
+   locationValue.innerText = e.target.value
+   console.log(e)
+})
+
+
+cityLocationBtn.addEventListener('click', function(e) {
+   e.stopPropagation();
+   citySelect.classList.toggle('hidden');
+   cityLocation.classList.toggle('hidden');
+   cityLocationBtn.classList.toggle('hidden');
+});
+
+cityCurrent.addEventListener('click', (e)=> {
+   e.stopPropagation();
+});
+
+window.addEventListener('click', function() {
+   citySelect.classList.add('hidden');
+   cityLocation.classList.remove('hidden');
+   cityLocationBtn.classList.remove('hidden');
+});
+//---
+
+
 
 /*
 Для родителя слойлеров пишем атрибут data-spollers
@@ -393,6 +492,7 @@ inMail.addEventListener("keyup", (e) => {
        stepCheckIcon[0].classList.remove("active")
    }
 })
+
 checkboxOne.addEventListener("change", (e) => {
    dataSteps.stepOne.checkbox = e.target.checked
 
@@ -405,7 +505,6 @@ checkboxOne.addEventListener("change", (e) => {
        stepCheckIcon[0].classList.add("active")
        stepCounts[1].classList.add("active")
        stepTitle[1].classList.add("active")
-
    } else {
        stepHidden[0].style.display = "none"
        stepCheckIcon[0].classList.remove("active")
@@ -591,5 +690,11 @@ stepGuarantees[1].addEventListener('change', (e) => {
        disableBtn.removeAttribute("disabled")
    }
 })
+
+
+
+
+
+
 
 
