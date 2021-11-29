@@ -46,7 +46,6 @@ let locationValue = document.querySelector('.location-value');
 
 let cityCurrent = citySelect.querySelector('.select-city-curent');
 let citiesList = citySelect.querySelector('.select-city-body');
-console.log(cityCurrent)
 
 cities.forEach( el => {
    const newElement =  document.createElement('div');
@@ -101,7 +100,6 @@ citiesList.append(newElement)
    }
 
    locationValue.innerText = e.target.value
-   console.log(e)
 })
 
 
@@ -584,7 +582,7 @@ inHouse.addEventListener("keyup", (e) => {
 })
 inApartment.addEventListener("keyup", (e) => {
    dataSteps.stepTwo.checkDelivery.apartment = e.target.value
-   console.log(dataSteps)
+   // console.log(dataSteps)
 
    if (dataSteps.stepTwo.checkDelivery.checkbox &&
        dataSteps.stepTwo.checkDelivery.street &&
