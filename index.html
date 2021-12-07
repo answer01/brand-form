@@ -164,487 +164,489 @@
 
    <div class="wrapper">
       <main class="main">
-         <div class="form-section container">
+         <div class="container">
+            <div class="form-section">
 
-            <form class="order-form">
+               <form class="order-form">
 
-               <h1 class="order-form__title">Оформлення замовлення</h1>
+                  <h1 class="order-form__title">Оформлення замовлення</h1>
 
 
-               <div class="step active">
-                  <div class="step-count active">Крок 1</div>
-                  <div class="step-top">
-                     <div class="step__title active">Контактні дані</div>
-                     <svg class="step-check icon" width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
-                     </svg>
-                     <a class="steps-clear btn-gray" href="#" onclick="location.reload(); return false;">Стерти всю
-                        інформацію
-                        <svg class="icon">
-                           <use xlink:href="#Delete-35"></use>
+                  <div class="step active">
+                     <div class="step-count active">Крок 1</div>
+                     <div class="step-top">
+                        <div class="step__title active">Контактні дані</div>
+                        <svg class="step-check icon" width="30" height="30">
+                           <use xlink:href="#Done_max-64"></use>
                         </svg>
-                     </a>
-                  </div>
-
-                  <div class="step-content">
-                     <div class="step-content__links">
-                        <a class="step-content__link active" href="#">Я новий клієнт</a>
-                        <a class="step-content__link" href="#">Я постійний клієнт</a>
-                     </div>
-
-                     <div class="step-content__inputs">
-                        <div class="step-inputs-row">
-                           <input class="step-input__name" autocomplete="off" type="text" name="form[]"
-                              placeholder="Ім’я">
-                           <input class="step-input__lastname" autocomplete="off" type="text" name="form[]"
-                              placeholder="Прізвище">
-                        </div>
-                        <div class="step-inputs-row">
-                           <label class="step-input__phone-lable">
-                              +38
-                              <input class="step-input__phone" autocomplete="off" type="text" name="form[]"
-                                 placeholder="Телефон">
-                           </label>
-                           <input class="step-input__mail" autocomplete="off" type="text" name="form[]"
-                              placeholder="Електронна пошта">
-                        </div>
-                     </div>
-
-                     <label class="checkbox">
-                        <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
-                        <span class="checkbox-text checkbox-bold">Я надаю згоду на обробку персональних даних</span>
-                     </label>
-                  </div>
-               </div>
-
-
-               <div class="step">
-                  <div class="step-count">Крок 2</div>
-
-                  <div class="step-top">
-                     <div class="step__title">Доставка</div>
-                     <svg class="step-check icon " width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
-                     </svg>
-                  </div>
-
-                  <div class="step-hidden step2">
-                     <div class="step-content-location">
-                        <div class="location-title">
-                           Місто:
-                        </div>
-                        <div class="location">
-                           <svg class="icon" width="8" height="12">
-                              <use xlink:href="#Geotag-08"></use>
+                        <a class="steps-clear btn-gray" href="#" onclick="location.reload(); return false;">Стерти всю
+                           інформацію
+                           <svg class="icon">
+                              <use xlink:href="#Delete-35"></use>
                            </svg>
-                           <span id="location-value" class="location-value">
-                              Київ
-                           </span>
+                        </a>
+                     </div>
+
+                     <div class="step-content">
+                        <div class="step-content__links">
+                           <a class="step-content__link active" href="#">Я новий клієнт</a>
+                           <a class="step-content__link" href="#">Я постійний клієнт</a>
                         </div>
-                        <button type="button" class="step-content__location-link">обрати інше місто</button>
 
-                        <div class="city__select hidden">
-                           <div class="select-head select-city-head">
-                              <input id="select-city-curent" type="text" class="select-city-curent" value=""
-                                 autocomplete="off">
+                        <div class="step-content__inputs">
+                           <div class="step-inputs-row">
+                              <input class="step-input__name" autocomplete="off" type="text" name="form[]"
+                                 placeholder="Ім’я">
+                              <input class="step-input__lastname" autocomplete="off" type="text" name="form[]"
+                                 placeholder="Прізвище">
                            </div>
-                           <div class="select-city-body">
+                           <div class="step-inputs-row">
+                              <label class="step-input__phone-lable">
+                                 +38
+                                 <input class="step-input__phone" autocomplete="off" type="text" name="form[]"
+                                    placeholder="Телефон">
+                              </label>
+                              <input class="step-input__mail" autocomplete="off" type="text" name="form[]"
+                                 placeholder="Електронна пошта">
+                           </div>
+                        </div>
 
+                        <label class="checkbox">
+                           <input class="checkbox-input" type="checkbox" value="1" name="form[]" checked>
+                           <span class="checkbox-text checkbox-bold">Я надаю згоду на обробку персональних даних</span>
+                        </label>
+                     </div>
+                  </div>
+
+
+                  <div class="step">
+                     <div class="step-count">Крок 2</div>
+
+                     <div class="step-top">
+                        <div class="step__title">Доставка</div>
+                        <svg class="step-check icon " width="30" height="30">
+                           <use xlink:href="#Done_max-64"></use>
+                        </svg>
+                     </div>
+
+                     <div class="step-hidden step2">
+                        <div class="step-content-location">
+                           <div class="location-title">
+                              Місто:
+                           </div>
+                           <div class="location">
+                              <svg class="icon" width="8" height="12">
+                                 <use xlink:href="#Geotag-08"></use>
+                              </svg>
+                              <span id="location-value" class="location-value">
+                                 Київ
+                              </span>
+                           </div>
+                           <button type="button" class="step-content__location-link">обрати інше місто</button>
+
+                           <div class="city__select hidden">
+                              <div class="select-head select-city-head">
+                                 <input id="select-city-curent" type="text" class="select-city-curent" value=""
+                                    autocomplete="off">
+                              </div>
+                              <div class="select-city-body">
+
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="step-choise">
+                           <div class="step-choise__item">
+                              <label class="checkbox mr">
+                                 <input id="form-delivery" class="checkbox-input" type="radio" value="1"
+                                    name="form-delivery">
+                                 <span class="checkbox-text">Кур’єрська доставка
+                                    <span class="checkbox-text__after">Безкоштовно</span>
+                                 </span>
+                              </label>
+                              <div class="step-content__inputs step-inputs-row">
+                                 <input class="step-input__street" autocomplete="off" type="text" name="form[]"
+                                    placeholder="Княжий Затон вулиця">
+                                 <input class="step-input__house" autocomplete="off" type="text" name="form[]"
+                                    placeholder="21">
+                                 <input class="step-input__apartment" autocomplete="off" type="text" name="form[]"
+                                    placeholder="173">
+                              </div>
+                           </div>
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input id="form-pickup" class="checkbox-input" type="radio" value="1"
+                                    name="form-delivery">
+                                 <span class="checkbox-text">Самовивіз
+                                    <span class="checkbox-text__after">Безкоштовно</span>
+                                 </span>
+                              </label>
+                           </div>
+                           <p class="step-choise__text">
+                              Адреса пункту самовивозу: <span>вулиця Новий шлях, 22</span> (район станції метро
+                              “Академмістечко”).
+                              Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у
+                              суботу
+                              та
+                              неділю.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="step">
+                     <div class="step-count">Крок 3</div>
+
+                     <div class="step-top">
+                        <div class="step__title">Оплата</div>
+                        <svg class="step-check icon " width="30" height="30">
+                           <use xlink:href="#Done_max-64"></use>
+                        </svg>
+                     </div>
+
+                     <div class="step-hidden">
+
+                        <div class="step-choise">
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="payment">
+                                 <span class="checkbox-text">Кур’єру при отриманні (лише готівка) </span>
+                              </label>
+                           </div>
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="payment">
+                                 <span class="checkbox-text">Карткою онлайн (Liqpay)</span>
+                              </label>
+                           </div>
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="payment">
+                                 <span class="checkbox-text">Післяплата</span>
+                              </label>
+                           </div>
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="payment">
+                                 <span class="checkbox-text">Кредит/оплата частинами</span>
+                              </label>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+
+                  <div class="step active">
+                     <div class="step-count">Крок 4</div>
+
+                     <div class="step-top">
+                        <div class="step__title">Збирання</div>
+                        <svg class="step-check icon " width="30" height="30">
+                           <use xlink:href="#Done_max-64"></use>
+                        </svg>
+                     </div>
+
+                     <div class="step-hidden">
+                        <div class="step-choise__text">
+                           У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний
+                           для
+                           Вас
+                           спосіб збирання.
+                        </div>
+
+                        <div class="step-spoiler" data-spollers>
+                           <p class="spoiler-title" data-spoller>
+                              Товари, що потребують збирання
+                              <svg class="icon" width="8" height="5">
+                                 <use xlink:href="#Dropdown-10"></use>
+                              </svg>
+                           </p>
+                           <p class="spoiler-body step-choise__text">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam vero hic
+                              similique quo. Debitis atque consectetur cum harum corrupti? Eaque, consequuntur porro!
+                              Temporibus error ea ipsam consectetur. Porro, odio.
+                           </p>
+                        </div>
+
+                        <div class="step-choise">
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="cureir">
+                                 <span class="checkbox-text">Збирання нашими кур’єрами<span
+                                       class="checkbox-text__after">250 грн</span></span>
+                              </label>
+                           </div>
+                           <div class="step-choise__item">
+                              <label class="checkbox">
+                                 <input class="checkbox-input" type="radio" value="1" name="cureir">
+                                 <span class="checkbox-text selfcurier">Самостійно<span
+                                       class="checkbox-text__after">Безкоштовно</span>
+                                 </span>
+                              </label>
                            </div>
                         </div>
                      </div>
 
-                     <div class="step-choise">
-                        <div class="step-choise__item">
-                           <label class="checkbox mr">
-                              <input id="form-delivery" class="checkbox-input" type="radio" value="1"
-                                 name="form-delivery">
-                              <span class="checkbox-text">Кур’єрська доставка
+                  </div>
+
+
+                  <div class="step">
+                     <div class="step-count">Крок 5</div>
+
+                     <div class="step-top step-top-garanty">
+                        <div class="step__title">Додаткова гарантія</div>
+                        <svg class="step-check icon " width="30" height="30">
+                           <use xlink:href="#Done_max-64"></use>
+                        </svg>
+                     </div>
+
+                     <div class="step-hidden">
+                        <div class="step-choise__item step-choise__item--garanty active">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="garanty">
+                              <span class="checkbox-text">Так
+                                 <span class="checkbox-text__after">800 грн</span>
+                              </span>
+                           </label>
+
+
+                           <div class="step-choise__text">
+                              Ми пропонуємо збільшити термін гарантії на товари, які ви придбали. Детальніше про умови
+                              можна
+                              дізнатись за цим <a href="#">посиланням.</a>
+                           </div>
+
+                           <div class="step-choise__text">
+                              Додаткова гарантія доступна на 2 товари з вашого замовлення:
+                           </div>
+
+                           <div class="step-choise-block df">
+
+                              <div class="step-choise">
+
+                                 <ul class="step-choise__products">
+
+
+                                    <li class="step-choise__product">
+                                       <div class="step-choise__product--content">
+                                          <label class="checkbox checkbox-product">
+                                             <input class="checkbox-input checkbox-product-input" type="checkbox"
+                                                value="1" name="form[]">
+                                             <span class="checkbox-text fs0">
+                                                1
+                                             </span>
+                                          </label>
+                                          <div class="step-choise__product-desc">
+                                             <p class="step-choise__product--category">Дитячий стіл</p>
+                                             <p class="step-choise__product--title">Brand Oxford Wood Max</p>
+                                             <p class="step-choise__product--garanty">+800 грн за 1 рік
+                                                гарантії</p>
+                                          </div>
+                                       </div>
+                                       <div class="step-quantity">
+                                          <p class="step-quantity-text">Додати</p>
+
+                                          <div class="quantity">
+                                             <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                             </div>
+
+                                             <div class="quantity__btns">
+                                                <div class="quantity__button quantity__button_plus">
+                                                   <svg width="8" height="5" viewBox="0 0 8 5"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <path
+                                                         d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
+                                                         fill="#808080"></path>
+                                                   </svg>
+                                                </div>
+                                                <div class="quantity__button quantity__button_minus">
+                                                   <svg width="8" height="5" viewBox="0 0 8 5"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <path
+                                                         d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
+                                                         fill="#808080"></path>
+                                                   </svg>
+                                                </div>
+                                             </div>
+
+                                          </div>
+                                          <p class="step-quantity-text">років
+                                             гарантії</p>
+                                       </div>
+                                    </li>
+                                    <li class="step-choise__product">
+                                       <div class="step-choise__product--content">
+                                          <label class="checkbox checkbox-product">
+                                             <input class="checkbox-input checkbox-product-input" type="checkbox"
+                                                value="1" name="form[]">
+                                             <span class="checkbox-text fs0">
+                                                1
+                                             </span>
+                                          </label>
+                                          <div class="step-choise__product-desc">
+                                             <p class="step-choise__product--category">Дитяче крісло</p>
+                                             <p class="step-choise__product--title">Brand Match Graybase</p>
+                                             <p class="step-choise__product--garanty">+500 грн за 1 рік
+                                                гарантії</p>
+                                          </div>
+                                       </div>
+                                       <div class="step-quantity">
+                                          <p class="step-quantity-text">Додати</p>
+
+                                          <div class="quantity">
+                                             <div class="quantity__input">
+                                                <input autocomplete="off" type="text" name="form[]" value="1">
+                                             </div>
+
+                                             <div class="quantity__btns">
+                                                <div class="quantity__button quantity__button_plus">
+                                                   <svg width="8" height="5" viewBox="0 0 8 5"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <path
+                                                         d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
+                                                         fill="#808080"></path>
+                                                   </svg>
+                                                </div>
+                                                <div class="quantity__button quantity__button_minus">
+                                                   <svg width="8" height="5" viewBox="0 0 8 5"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <path
+                                                         d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
+                                                         fill="#808080"></path>
+                                                   </svg>
+                                                </div>
+                                             </div>
+
+                                          </div>
+                                          <p class="step-quantity-text">років
+                                             гарантії</p>
+
+                                       </div>
+                                    </li>
+
+                                 </ul>
+
+                              </div>
+
+
+                           </div>
+                        </div>
+                        <div class="step-choise__item step-choise__item--garanty">
+                           <label class="checkbox">
+                              <input class="checkbox-input" type="radio" value="1" name="garanty">
+                              <span class="checkbox-text">Hi
                                  <span class="checkbox-text__after">Безкоштовно</span>
                               </span>
                            </label>
-                           <div class="step-content__inputs step-inputs-row">
-                              <input class="step-input__street" autocomplete="off" type="text" name="form[]"
-                                 placeholder="Княжий Затон вулиця">
-                              <input class="step-input__house" autocomplete="off" type="text" name="form[]"
-                                 placeholder="21">
-                              <input class="step-input__apartment" autocomplete="off" type="text" name="form[]"
-                                 placeholder="173">
+                        </div>
+
+                     </div>
+
+
+                  </div>
+
+
+               </form>
+
+
+               <div class="order-bill-wrapper">
+                  <div class="order-bill">
+
+                     <h4 class="order-bill__title">Замовлення</h4>
+
+                     <div class="order-bill__items">
+
+                        <div class="order-bill__item">
+                           <div class="order-bill__category">Дитячий стіл</div>
+                           <div class="order-bill__product">
+                              <p>Brand Oxford Wood Max</p>
+                              <p class="price">16 800 грн</p>
+                           </div>
+                           <div class="order-bill__garanty">
+                              <p>Подовжена гарантія (+1 рік)</p>
+                              <p class="price">800 грн</p>
                            </div>
                         </div>
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input id="form-pickup" class="checkbox-input" type="radio" value="1"
-                                 name="form-delivery">
-                              <span class="checkbox-text">Самовивіз
-                                 <span class="checkbox-text__after">Безкоштовно</span>
-                              </span>
-                           </label>
-                        </div>
-                        <p class="step-choise__text">
-                           Адреса пункту самовивозу: <span>вулиця Новий шлях, 22</span> (район станції метро
-                           “Академмістечко”).
-                           Забрати замовлення можна з 10:00 до 20:00 (понеділок - п’ятниця) та з 11:00 до 20:00 у
-                           суботу
-                           та
-                           неділю.
-                        </p>
-                     </div>
-                  </div>
-               </div>
 
-               <div class="step">
-                  <div class="step-count">Крок 3</div>
-
-                  <div class="step-top">
-                     <div class="step__title">Оплата</div>
-                     <svg class="step-check icon " width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
-                     </svg>
-                  </div>
-
-                  <div class="step-hidden">
-
-                     <div class="step-choise">
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="payment">
-                              <span class="checkbox-text">Кур’єру при отриманні (лише готівка) </span>
-                           </label>
-                        </div>
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="payment">
-                              <span class="checkbox-text">Карткою онлайн (Liqpay)</span>
-                           </label>
-                        </div>
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="payment">
-                              <span class="checkbox-text">Післяплата</span>
-                           </label>
-                        </div>
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="payment">
-                              <span class="checkbox-text">Кредит/оплата частинами</span>
-                           </label>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-
-
-               <div class="step active">
-                  <div class="step-count">Крок 4</div>
-
-                  <div class="step-top">
-                     <div class="step__title">Збирання</div>
-                     <svg class="step-check icon " width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
-                     </svg>
-                  </div>
-
-                  <div class="step-hidden">
-                     <div class="step-choise__text">
-                        У замовленні є товари, котрі постачаються у розібраному стані. Оберіть, будь ласка, бажаний
-                        для
-                        Вас
-                        спосіб збирання.
-                     </div>
-
-                     <div class="step-spoiler" data-spollers>
-                        <p class="spoiler-title" data-spoller>
-                           Товари, що потребують збирання
-                           <svg class="icon" width="8" height="5">
-                              <use xlink:href="#Dropdown-10"></use>
-                           </svg>
-                        </p>
-                        <p class="spoiler-body step-choise__text">
-                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam vero hic
-                           similique quo. Debitis atque consectetur cum harum corrupti? Eaque, consequuntur porro!
-                           Temporibus error ea ipsam consectetur. Porro, odio.
-                        </p>
-                     </div>
-
-                     <div class="step-choise">
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="cureir">
-                              <span class="checkbox-text">Збирання нашими кур’єрами<span
-                                    class="checkbox-text__after">250 грн</span></span>
-                           </label>
-                        </div>
-                        <div class="step-choise__item">
-                           <label class="checkbox">
-                              <input class="checkbox-input" type="radio" value="1" name="cureir">
-                              <span class="checkbox-text selfcurier">Самостійно<span
-                                    class="checkbox-text__after">Безкоштовно</span>
-                              </span>
-                           </label>
-                        </div>
-                     </div>
-                  </div>
-
-               </div>
-
-
-               <div class="step">
-                  <div class="step-count">Крок 5</div>
-
-                  <div class="step-top step-top-garanty">
-                     <div class="step__title">Додаткова гарантія</div>
-                     <svg class="step-check icon " width="30" height="30">
-                        <use xlink:href="#Done_max-64"></use>
-                     </svg>
-                  </div>
-
-                  <div class="step-hidden">
-                     <div class="step-choise__item step-choise__item--garanty active">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="garanty">
-                           <span class="checkbox-text">Так
-                              <span class="checkbox-text__after">800 грн</span>
-                           </span>
-                        </label>
-
-
-                        <div class="step-choise__text">
-                           Ми пропонуємо збільшити термін гарантії на товари, які ви придбали. Детальніше про умови
-                           можна
-                           дізнатись за цим <a href="#">посиланням.</a>
-                        </div>
-
-                        <div class="step-choise__text">
-                           Додаткова гарантія доступна на 2 товари з вашого замовлення:
-                        </div>
-
-                        <div class="step-choise-block df">
-
-                           <div class="step-choise">
-
-                              <ul class="step-choise__products">
-
-
-                                 <li class="step-choise__product">
-                                    <div class="step-choise__product--content">
-                                       <label class="checkbox checkbox-product">
-                                          <input class="checkbox-input checkbox-product-input" type="checkbox" value="1"
-                                             name="form[]">
-                                          <span class="checkbox-text fs0">
-                                             1
-                                          </span>
-                                       </label>
-                                       <div class="step-choise__product-desc">
-                                          <p class="step-choise__product--category">Дитячий стіл</p>
-                                          <p class="step-choise__product--title">Brand Oxford Wood Max</p>
-                                          <p class="step-choise__product--garanty">+800 грн за 1 рік
-                                             гарантії</p>
-                                       </div>
-                                    </div>
-                                    <div class="step-quantity">
-                                       <p class="step-quantity-text">Додати</p>
-
-                                       <div class="quantity">
-                                          <div class="quantity__input">
-                                             <input autocomplete="off" type="text" name="form[]" value="1">
-                                          </div>
-
-                                          <div class="quantity__btns">
-                                             <div class="quantity__button quantity__button_plus">
-                                                <svg width="8" height="5" viewBox="0 0 8 5"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                   <path
-                                                      d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
-                                                      fill="#808080"></path>
-                                                </svg>
-                                             </div>
-                                             <div class="quantity__button quantity__button_minus">
-                                                <svg width="8" height="5" viewBox="0 0 8 5"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                   <path
-                                                      d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
-                                                      fill="#808080"></path>
-                                                </svg>
-                                             </div>
-                                          </div>
-
-                                       </div>
-                                       <p class="step-quantity-text">років
-                                          гарантії</p>
-                                    </div>
-                                 </li>
-                                 <li class="step-choise__product">
-                                    <div class="step-choise__product--content">
-                                       <label class="checkbox checkbox-product">
-                                          <input class="checkbox-input checkbox-product-input" type="checkbox" value="1"
-                                             name="form[]">
-                                          <span class="checkbox-text fs0">
-                                             1
-                                          </span>
-                                       </label>
-                                       <div class="step-choise__product-desc">
-                                          <p class="step-choise__product--category">Дитяче крісло</p>
-                                          <p class="step-choise__product--title">Brand Match Graybase</p>
-                                          <p class="step-choise__product--garanty">+500 грн за 1 рік
-                                             гарантії</p>
-                                       </div>
-                                    </div>
-                                    <div class="step-quantity">
-                                       <p class="step-quantity-text">Додати</p>
-
-                                       <div class="quantity">
-                                          <div class="quantity__input">
-                                             <input autocomplete="off" type="text" name="form[]" value="1">
-                                          </div>
-
-                                          <div class="quantity__btns">
-                                             <div class="quantity__button quantity__button_plus">
-                                                <svg width="8" height="5" viewBox="0 0 8 5"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                   <path
-                                                      d="M0 4.46899L0.531006 5L4.01599 1.14299L7.46899 5L8 4.46899L4 0L0 4.46899Z"
-                                                      fill="#808080"></path>
-                                                </svg>
-                                             </div>
-                                             <div class="quantity__button quantity__button_minus">
-                                                <svg width="8" height="5" viewBox="0 0 8 5"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                   <path
-                                                      d="M8 0.531006L7.46899 0L3.98401 3.85701L0.531006 0L0 0.531006L4 5L8 0.531006Z"
-                                                      fill="#808080"></path>
-                                                </svg>
-                                             </div>
-                                          </div>
-
-                                       </div>
-                                       <p class="step-quantity-text">років
-                                          гарантії</p>
-
-                                    </div>
-                                 </li>
-
-                              </ul>
-
+                        <div class="order-bill__item">
+                           <div class="order-bill__category">Лампа світлодіодна</div>
+                           <div class="order-bill__product">
+                              <p>Brand DL-600</p>
+                              <p class="price">1 600 грн</p>
                            </div>
-
-
+                           <div class="order-bill__action">
+                              <p>Знижка</p>
+                              <p class="price">-1600 грн</p>
+                           </div>
                         </div>
+
+                        <div class="order-bill__item">
+                           <div class="order-bill__category">Аксесуар</div>
+                           <div class="order-bill__product">
+                              <p>Подушка-розмальовка</p>
+                              <p class="price">900 грн</p>
+                           </div>
+                           <div class="order-bill__action">
+                              <p>Знижка</p>
+                              <p class="price">900 грн</p>
+                           </div>
+                        </div>
+
+
+                        <div class="order-bill__item">
+                           <div class="order-bill__category">Аксесуар</div>
+                           <div class="order-bill__product">
+                              <p>Маркери магнітні</p>
+                              <p class="price">260 грн</p>
+                           </div>
+                           <div class="order-bill__action">
+                              <p>Знижка</p>
+                              <p class="price">-260 грн</p>
+                           </div>
+                        </div>
+
+                        <div class="order-bill__item">
+                           <div class="order-bill__category">Аксесуар</div>
+                           <div class="order-bill__product">
+                              <p>Щось ще</p>
+                              <p class="price">260 грн</p>
+                           </div>
+                           <div class="order-bill__action">
+                              <p>Знижка</p>
+                              <p class="price">-260 грн</p>
+                           </div>
+                        </div>
+
                      </div>
-                     <div class="step-choise__item step-choise__item--garanty">
-                        <label class="checkbox">
-                           <input class="checkbox-input" type="radio" value="1" name="garanty">
-                           <span class="checkbox-text">Hi
-                              <span class="checkbox-text__after">Безкоштовно</span>
-                           </span>
-                        </label>
+
+                     <div class="order-bill__courier">
+                        <p>Збирання товару кур’єрами</p>
+                        <p class="courier-price">250 грн</p>
+                     </div>
+
+                     <div class="action">
+                        <p>Загальна знижка:</p>
+                        <p class="action-all-price">-8 360 грн</p>
+                     </div>
+
+                     <div class="total-price">
+                        <p>До сплати:</p>
+                        <p class="action-all-price">17 850 грн</p>
+                     </div>
+
+                     <button id="disable-button" disabled="disabled" class="btn order-bill-btn disabled">Підтвердити
+                        замовлення</button>
+
+                     <div class="order-conf">Підтверджуючи замовлення, я приймаю
+                        умови <a href="#">угоди користувача</a>
                      </div>
 
                   </div>
-
-
                </div>
 
-
-            </form>
-
-
-            <div class="order-bill-wrapper">
-               <div class="order-bill">
-
-                  <h4 class="order-bill__title">Замовлення</h4>
-
-                  <div class="order-bill__items">
-
-                     <div class="order-bill__item">
-                        <div class="order-bill__category">Дитячий стіл</div>
-                        <div class="order-bill__product">
-                           <p>Brand Oxford Wood Max</p>
-                           <p class="price">16 800 грн</p>
-                        </div>
-                        <div class="order-bill__garanty">
-                           <p>Подовжена гарантія (+1 рік)</p>
-                           <p class="price">800 грн</p>
-                        </div>
-                     </div>
-
-                     <div class="order-bill__item">
-                        <div class="order-bill__category">Лампа світлодіодна</div>
-                        <div class="order-bill__product">
-                           <p>Brand DL-600</p>
-                           <p class="price">1 600 грн</p>
-                        </div>
-                        <div class="order-bill__action">
-                           <p>Знижка</p>
-                           <p class="price">-1600 грн</p>
-                        </div>
-                     </div>
-
-                     <div class="order-bill__item">
-                        <div class="order-bill__category">Аксесуар</div>
-                        <div class="order-bill__product">
-                           <p>Подушка-розмальовка</p>
-                           <p class="price">900 грн</p>
-                        </div>
-                        <div class="order-bill__action">
-                           <p>Знижка</p>
-                           <p class="price">900 грн</p>
-                        </div>
-                     </div>
-
-
-                     <div class="order-bill__item">
-                        <div class="order-bill__category">Аксесуар</div>
-                        <div class="order-bill__product">
-                           <p>Маркери магнітні</p>
-                           <p class="price">260 грн</p>
-                        </div>
-                        <div class="order-bill__action">
-                           <p>Знижка</p>
-                           <p class="price">-260 грн</p>
-                        </div>
-                     </div>
-
-                     <div class="order-bill__item">
-                        <div class="order-bill__category">Аксесуар</div>
-                        <div class="order-bill__product">
-                           <p>Щось ще</p>
-                           <p class="price">260 грн</p>
-                        </div>
-                        <div class="order-bill__action">
-                           <p>Знижка</p>
-                           <p class="price">-260 грн</p>
-                        </div>
-                     </div>
-
-                  </div>
-
-                  <div class="order-bill__courier">
-                     <p>Збирання товару кур’єрами</p>
-                     <p class="courier-price">250 грн</p>
-                  </div>
-
-                  <div class="action">
-                     <p>Загальна знижка:</p>
-                     <p class="action-all-price">-8 360 грн</p>
-                  </div>
-
-                  <div class="total-price">
-                     <p>До сплати:</p>
-                     <p class="action-all-price">17 850 грн</p>
-                  </div>
-
-                  <button id="disable-button" disabled="disabled" class="btn order-bill-btn disabled">Підтвердити
-                     замовлення</button>
-
-                  <div class="order-conf">Підтверджуючи замовлення, я приймаю
-                     умови <a href="#">угоди користувача</a>
-                  </div>
-
-               </div>
             </div>
-
          </div>
       </main>
 
